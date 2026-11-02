@@ -7,7 +7,7 @@
 #include "../../modules/crt_runtime/include/fylm/preset_catalog.hpp"
 #endif
 namespace fylm {
-enum class Kind { Check, Integer, Float, Popup, Blob, Button };
+enum class Kind { Check, Integer, Float, Popup, Blob, Button, Color };
 struct Param {const char* key;Kind kind;float low,high,value;int choices=0;const char* items=nullptr;};
 #if defined(FYLM_SHADERGLASS)
 inline constexpr const char* Name="FYLM ShaderGlass";
@@ -69,7 +69,7 @@ inline constexpr const char* Match="FYLM_DitheringStudio";
 inline constexpr Param Params[]={
  {"effect.enabled",Kind::Check,0,1,1},
  {"param.algorithm",Kind::Popup,1,9,1,9,"Floyd-Steinberg|Bayer 4x4|Bayer 8x8|Binary Threshold|Blue Noise 64x64|Cover Print Halftone|PC-98|GBA|Modern Pixel Art"},
- {"param.palette",Kind::Popup,1,8,1,8,"--|Black/White|Game Boy|PICO-8|DawnBringer 16|DawnBringer 32|CGA|EGA"},
+ {"param.palette",Kind::Popup,1,11,1,11,"--|Black/White|Game Boy|PICO-8|DawnBringer 16|DawnBringer 32|CGA|EGA|Amber CRT|1986 Plasma|Custom palette"},
  {"param.threshold",Kind::Integer,0,255,128},{"param.resolution",Kind::Integer,0,8192,512},
  {"param.invert",Kind::Check,0,1,0},{"param.serpentine",Kind::Check,0,1,1},
  {"param.contrast",Kind::Float,-100,100,0},{"param.midtones",Kind::Float,.5f,2,1},
@@ -123,7 +123,20 @@ inline constexpr Param Params[]={
  {"library.modern.apply",Kind::Button,0,0,0},
  {"pa.spec",Kind::Popup,1,6,1,6,"Art palette (legacy)|PC-9801 Digital 8 (3-bit)|PC-9801 Analog 16 (4-bit index / RGB444)|PC-9821 Indexed 256 (8-bit index)|PC-9821 High Colour (RGB565 / 16-bit)|PC-9821 True Colour (RGB888 / 24-bit)"},
  {"pa.indexed_colors",Kind::Integer,2,256,256},
- {"pa.dac",Kind::Popup,1,2,2,2,"6 bits/channel (18-bit RGB / 262144 colours)|8 bits/channel (24-bit RGB / 16777216 colours)"}
+ {"pa.dac",Kind::Popup,1,2,2,2,"6 bits/channel (18-bit RGB / 262144 colours)|8 bits/channel (24-bit RGB / 16777216 colours)"},
+ {"custom.count",Kind::Popup,1,7,3,7,"2|3|4|5|6|7|8"},
+ {"custom.color1",Kind::Color,0,16777215,997391},
+ {"custom.color2",Kind::Color,0,16777215,3170864},
+ {"custom.color3",Kind::Color,0,16777215,9153551},
+ {"custom.color4",Kind::Color,0,16777215,10206223},
+ {"custom.color5",Kind::Color,0,16777215,12573823},
+ {"custom.color6",Kind::Color,0,16777215,14477482},
+ {"custom.color7",Kind::Color,0,16777215,15659724},
+ {"custom.color8",Kind::Color,0,16777215,16777215},
+ {"halftone.mode",Kind::Popup,1,2,1,2,"Original cover print|Smooth CMYK dots"},
+ {"halftone.angle",Kind::Float,-180,180,0},
+ {"halftone.gain",Kind::Float,-50,50,0},
+ {"param.bayer_size",Kind::Popup,1,4,1,4,"Follow algorithm|2 x 2|4 x 4|8 x 8"}
 };
 #endif
 inline constexpr int Count=int(sizeof(Params)/sizeof(Params[0]))+1;

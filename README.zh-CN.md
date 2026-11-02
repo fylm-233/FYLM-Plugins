@@ -18,6 +18,10 @@
 
 预览使用 FYLM 原创诊断图，展示滤镜效果，并非 AE 界面截图。
 
+Pixel Art 新增四级 **Amber CRT**、**1986 Plasma** 配色，以及支持 AE 原生吸管的 **2–8 色自由色板**，Bayer 可选 **2×2／4×4／8×8** 网格。Halftone 新增可调角度、墨量的平滑 CMYK 网点。这两套单色风格为 FYLM 艺术化配色。
+
+Windows **Setup.exe** 可自动检测 AE 版本，也可手动选择其他安装目录；选定目标、关闭 AE/aerender 后点击安装。
+
 ## 开始使用
 
 1. 关闭 AE 和 aerender，解压 Windows 测试包，以管理员 PowerShell 运行包内 `install.ps1`。

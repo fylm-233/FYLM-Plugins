@@ -65,3 +65,26 @@ RenderResult applyHalftone(std::vector<std::uint8_t>& a,int w,int h,float cell,I
     return {true,{}};
 }
 }
+namespace dither {
+RenderResult applyPrintHalftone(std::vector<std::uint8_t>& a,int w,int h,float pitch,float angle,float gain,IProgress* progress) noexcept {
+ if(w<0||h<0||std::size_t(w)>SIZE_MAX/std::size_t(std::max(1,h))/4||a.size()!=std::size_t(w)*h*4)return {false,"invalid print buffer",ErrorCode::InvalidImage};
+ if(!std::isfinite(pitch)||pitch<1||pitch>16||!std::isfinite(angle)||angle < -180||angle>180||!std::isfinite(gain)||gain < -50||gain>50)return {false,"invalid print settings",ErrorCode::InvalidParams};
+ if(!w||!h)return {true,{}};
+ try {
+  const auto source=a;float cs[4],sn[4];const float angles[]={15,75,0,45};
+  for(int c=0;c<4;++c){float theta=(angles[c]+angle)*.01745329252f;cs[c]=std::cos(theta);sn[c]=std::sin(theta);}
+  for(int y=0;y<h;++y){if(progress&&progress->cancelled())return {false,"cancelled",ErrorCode::Cancelled};for(int x=0;x<w;++x){float dots[4];
+   for(int c=0;c<4;++c){float u=((x+.5f)*cs[c]+(y+.5f)*sn[c])/pitch,v=(-(x+.5f)*sn[c]+(y+.5f)*cs[c])/pitch;
+    float cu=std::floor(u)+.5f,cv=std::floor(v)+.5f;
+    int sx=std::clamp(int(std::floor((cu*cs[c]-cv*sn[c])*pitch)),0,w-1),sy=std::clamp(int(std::floor((cu*sn[c]+cv*cs[c])*pitch)),0,h-1);
+    auto i=(std::size_t(sy)*w+sx)*4;float cyan=1-source[i]/255.f,magenta=1-source[i+1]/255.f,yellow=1-source[i+2]/255.f,k=std::min({cyan,magenta,yellow});
+    float amount=c==3?k:k>=.99999f?0:((c==0?cyan:c==1?magenta:yellow)-k)/(1-k);
+    amount=std::clamp(amount+gain*.01f*4*amount*(1-amount),0.f,1.f);
+    float dx=u-cu,dy=v-cv,r=.70710678f*std::sqrt(amount);
+    dots[c]=amount<=0?0:amount>=1?1:std::clamp((r-std::sqrt(dx*dx+dy*dy))*pitch+.5f,0.f,1.f);
+   }
+   auto out=(std::size_t(y)*w+x)*4;for(int c=0;c<3;++c)a[out+c]=byte(255*(1-dots[c])*(1-dots[3]));
+  }}return {true,{}};
+ }catch(const std::bad_alloc&){return {false,"print memory allocation failed",ErrorCode::OutOfMemory};}catch(...){return {false,"print failed",ErrorCode::Internal};}
+}
+}

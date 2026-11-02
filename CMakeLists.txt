@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
-project(DitheringStudio VERSION 0.13.2 LANGUAGES CXX)
+project(DitheringStudio VERSION 0.14.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(dither_core STATIC core/src/render.cpp core/src/palettes.cpp core/src/halftone.cpp)

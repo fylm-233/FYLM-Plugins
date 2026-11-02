@@ -148,6 +148,13 @@ int main(int argc,char** argv){try{
     require(result.ok,"reference");for(int y=0;y<height;++y)for(int x=0;x<w;++x){auto p=reinterpret_cast<PF_Pixel8*>(dest.data()+y*stride)[x];auto i=(y*w+x)*4;require(p.red==reference[i]&&p.green==reference[i+1]&&p.blue==reference[i+2]&&p.alpha==255,"AE halftone parity");}
    }
   }
+  for(int selection:{9,10,11})for(int matrix:{2,3,4}){
+   h.p[2].u.pd.value=2;h.p[3].u.pd.value=selection;h.p[73].u.pd.value=matrix;h.p[61].u.pd.value=3;
+   require(h.p[62].param_type==PF_Param_COLOR,"native eyedropper colour registration");h.p[62].u.cd.value={255,1,2,3};
+   po={};require(EffectMain(PF_Cmd_SMART_PRE_RENDER,&in,&out,nullptr,nullptr,&pe)==0,"new palette snapshot");leases("new palette leases");frame.reset(static_cast<Frame*>(po.pre_render_data));si.pre_render_data=frame.get();require(frame->dither.palette.size()==4&&frame->dither.orderedMatrix==(matrix==2?2:matrix==3?4:8),"new palette matrix mapping");if(selection==11)require(frame->dither.palette[0].r==1,"eyedropper value snapshot");require(EffectMain(PF_Cmd_SMART_RENDER,&in,&out,nullptr,nullptr,&se)==0&&h.checked==0,"new palette render");
+  }
+  h.p[2].u.pd.value=6;h.p[70].u.pd.value=2;h.p[71].u.fs_d.value=20;h.p[72].u.fs_d.value=15;
+  po={};require(EffectMain(PF_Cmd_SMART_PRE_RENDER,&in,&out,nullptr,nullptr,&pe)==0,"CMYK snapshot");leases("CMYK leases");frame.reset(static_cast<Frame*>(po.pre_render_data));si.pre_render_data=frame.get();require(frame->dither.smoothHalftone&&frame->dither.halftoneAngle==20,"CMYK mapping");require(EffectMain(PF_Cmd_SMART_RENDER,&in,&out,nullptr,nullptr,&se)==0,"CMYK render");h.p[2].u.pd.value=9;h.p[3].u.pd.value=1;h.p[70].u.pd.value=1;h.p[73].u.pd.value=1;
   h.p[fylm::index("pa.palette")].u.pd.value=3;h.p[fylm::index("pa.reference")].u.fs_d.value=.25;po={};
   require(EffectMain(PF_Cmd_SMART_PRE_RENDER,&in,&out,nullptr,nullptr,&pe)==0,"reference pre");leases("reference parameter leases");frame.reset(static_cast<Frame*>(po.pre_render_data));si.pre_render_data=frame.get();require(frame->referenceTime==6&&checkoutIds.count(2)&&checkoutIds.count(3),"reference dependency snapshot");require(EffectMain(PF_Cmd_SMART_RENDER,&in,&out,nullptr,nullptr,&se)==0&&h.checked==0,"reference render/checkin");h.p[fylm::index("pa.palette")].u.pd.value=2;
 #endif

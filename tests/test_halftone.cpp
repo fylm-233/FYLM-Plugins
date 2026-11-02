@@ -20,6 +20,10 @@ int main(){try{
   b=original;check(dither::applyHalftone(b,c.size,c.size).ok,"alpha render");
   for(std::size_t i=3;i<b.size();i+=4)check(b[i]==original[i],"alpha changed");
  }
+ std::vector<std::uint8_t> gradient(64*64*4);for(int y=0;y<64;y++)for(int x=0;x<64;x++){auto i=(y*64+x)*4;gradient[i]=x*4;gradient[i+1]=y*4;gradient[i+2]=90;gradient[i+3]=(x+y)%256;}
+ auto clean=gradient,rotated=gradient,gain=gradient;check(dither::applyPrintHalftone(clean,64,64,5,0,0).ok,"print render");check(dither::applyPrintHalftone(rotated,64,64,5,25,0).ok&&clean!=rotated,"angle must change image");check(dither::applyPrintHalftone(gain,64,64,5,0,25).ok&&gain!=clean,"gain must change image");for(std::size_t i=3;i<clean.size();i+=4)check(clean[i]==gradient[i],"print alpha");
+ for(int level:{0,255}){auto flat=std::vector<std::uint8_t>(16*16*4,level);check(dither::applyPrintHalftone(flat,16,16,4,0,0).ok,"flat print");for(std::size_t i=0;i<flat.size();i++)check(flat[i]==level,"black/white endpoint");}
+ check(!dither::applyPrintHalftone(clean,64,64,0,0,0).ok,"pitch validation");
  std::vector<std::uint8_t> empty;check(dither::applyHalftone(empty,0,0).ok,"empty");
  std::vector<std::uint8_t> invalid(3);check(!dither::applyHalftone(invalid,1,1).ok,"invalid accepted");
  std::cout<<"7 halftone specification FNV vectors, determinism and alpha preservation passed.\n";

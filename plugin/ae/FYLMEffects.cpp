@@ -100,6 +100,10 @@ bool disabled(int i,PF_ParamDef* params[]){
 #if !defined(FYLM_CRT_ONLY) && !defined(FYLM_SHADERGLASS)
     int algorithm=params[fylm::index("param.algorithm")]->u.pd.value;
     const char* key=fylm::Params[i-1].key;
+    if(std::strncmp(key,"custom.",7)==0)return algorithm>5||params[fylm::index("param.palette")]->u.pd.value!=11||(i>=62&&i<=69&&i-61>params[fylm::index("custom.count")]->u.pd.value+1);
+    if(std::strcmp(key,"param.bayer_size")==0)return algorithm!=2&&algorithm!=3;
+    if(std::strcmp(key,"halftone.mode")==0)return algorithm!=6;
+    if(std::strcmp(key,"halftone.angle")==0||std::strcmp(key,"halftone.gain")==0)return algorithm!=6||params[fylm::index("halftone.mode")]->u.pd.value!=2;
     // Retired hardware profile slots remain serialized for project compatibility.
     if(std::strcmp(key,"pa.spec")==0||std::strcmp(key,"pa.indexed_colors")==0||std::strcmp(key,"pa.dac")==0)return true;
     if(std::strncmp(key,"library.",8)==0){int mode=paLibraryMode(i);return mode==0||mode!=algorithm||(i%2==1&&params[paLibraryChooser(mode)]->u.pd.value==1);}
@@ -129,7 +133,8 @@ PF_Err setup(PF_InData* in,PF_OutData* out){
         else if(s.kind==fylm::Kind::Button){d.param_type=PF_Param_BUTTON;d.u.button_d.u.PF_DEF_NAMESPTR=loc::text(language,s.key).data();d.flags=PF_ParamFlag_SUPERVISE;}
         else
 #endif
-        if(s.kind==fylm::Kind::Check){d.param_type=PF_Param_CHECKBOX;d.u.bd.value=d.u.bd.dephault=s.value!=0;d.u.bd.u.PF_DEF_NAMEPTR="";}
+        if(s.kind==fylm::Kind::Color){d.param_type=PF_Param_COLOR;unsigned rgb=unsigned(s.value);d.u.cd.value=d.u.cd.dephault=PF_Pixel{255,A_u_char(rgb>>16),A_u_char(rgb>>8),A_u_char(rgb)};}
+        else if(s.kind==fylm::Kind::Check){d.param_type=PF_Param_CHECKBOX;d.u.bd.value=d.u.bd.dephault=s.value!=0;d.u.bd.u.PF_DEF_NAMEPTR="";}
         else if(s.kind==fylm::Kind::Integer){d.param_type=PF_Param_SLIDER;d.u.sd.value=d.u.sd.dephault=A_long(s.value);d.u.sd.valid_min=d.u.sd.slider_min=A_long(s.low);d.u.sd.valid_max=d.u.sd.slider_max=A_long(s.high);}
         else if(s.kind==fylm::Kind::Popup){d.param_type=PF_Param_POPUP;d.u.pd.num_choices=s.choices;d.u.pd.value=d.u.pd.dephault=A_long(s.value);d.u.pd.u.PF_DEF_NAMESPTR=s.items;d.flags|=PF_ParamFlag_CANNOT_TIME_VARY|PF_ParamFlag_SUPERVISE;
 #ifdef FYLM_CRT_ONLY
@@ -141,6 +146,7 @@ PF_Err setup(PF_InData* in,PF_OutData* out){
 #endif
 #if !defined(FYLM_CRT_ONLY) && !defined(FYLM_SHADERGLASS)
          if(std::strncmp(s.key,"library.",8)==0){auto key=std::string(s.key);if(key=="library.recipe")d.u.pd.u.PF_DEF_NAMESPTR=loc::text(language,"library.items").data();else if(key.size()>7&&key.substr(key.size()-7)==".preset"){key=key.substr(0,key.size()-7)+".items";d.u.pd.u.PF_DEF_NAMESPTR=loc::text(language,key).data();}}
+         if(std::strcmp(s.key,"param.palette")==0||std::strcmp(s.key,"halftone.mode")==0||std::strcmp(s.key,"param.bayer_size")==0)d.u.pd.u.PF_DEF_NAMESPTR=loc::text(language,std::string(s.key)+".items").data();
          if(std::strcmp(s.key,"pa.spec")==0)d.u.pd.u.PF_DEF_NAMESPTR=loc::text(language,"pa.spec.items").data();
          if(std::strcmp(s.key,"pa.dac")==0)d.u.pd.u.PF_DEF_NAMESPTR=loc::text(language,"pa.dac.items").data();
 #endif
@@ -224,6 +230,7 @@ PF_Err pre(PF_InData* in,PF_PreRenderExtra* e){
 #if !defined(FYLM_CRT_ONLY)
     std::vector<unsigned char> presetBytes;
 #endif
+    std::vector<dither::Rgb8> customColors;
     for(int i=1;i<fylm::Count;++i){PF_ParamDef p{};auto err=PF_CHECKOUT_PARAM(in,i,in->current_time,in->time_step,in->time_scale,&p);if(err)return err;
         ParamLease lease(in,&p);
 #ifdef FYLM_SHADERGLASS
@@ -233,6 +240,7 @@ PF_Err pre(PF_InData* in,PF_PreRenderExtra* e){
         if(fylm::Params[i-1].kind==fylm::Kind::Blob){presetBytes=paRead(in,p.u.arb_d.value);continue;}
         if(fylm::Params[i-1].kind==fylm::Kind::Button)continue;
 #endif
+        if(fylm::Params[i-1].kind==fylm::Kind::Color){customColors.push_back({p.u.cd.value.red,p.u.cd.value.green,p.u.cd.value.blue});continue;}
         switch(fylm::Params[i-1].kind){case fylm::Kind::Check:values[i]=p.u.bd.value;break;case fylm::Kind::Integer:values[i]=p.u.sd.value;break;case fylm::Kind::Popup:values[i]=p.u.pd.value;break;default:values[i]=p.u.fs_d.value;}
         const auto& spec=fylm::Params[i-1];
         if(!std::isfinite(values[i])||values[i]<spec.low||values[i]>spec.high||
@@ -252,8 +260,11 @@ PF_Err pre(PF_InData* in,PF_PreRenderExtra* e){
     f->tape=fylm::crt::signalFromUi(value);f->retro=fylm::crt::controlsFromUi(value);auto& c=f->retro.crt;
     f->enabled=f->enabled&&(c.vhsEnabled||c.crtEnabled);
 #else
-    constexpr int algorithms[]={1,2,8,15,17,31,1001,1002,1003};constexpr const char* palettes[]={"none","bw","gb","pico8","db16","db32","cga16","ega16"};
+    constexpr int algorithms[]={1,2,8,15,17,31,1001,1002,1003};constexpr const char* palettes[]={"none","bw","gb","pico8","db16","db32","cga16","ega16","amber_crt","plasma1986","none"};
     f->dither.algorithmId=algorithms[int(value("param.algorithm"))-1];f->dither.palette=dither::palette(palettes[int(value("param.palette"))-1]);
+    if(int(value("param.palette"))==11){customColors.resize(std::size_t(value("custom.count"))+1);std::stable_sort(customColors.begin(),customColors.end(),[](auto a,auto b){return 2126*a.r+7152*a.g+722*a.b<2126*b.r+7152*b.g+722*b.b;});f->dither.palette=customColors;}
+    constexpr int matricesClassic[]={0,2,4,8};f->dither.orderedMatrix=matricesClassic[int(value("param.bayer_size"))-1];
+    f->dither.smoothHalftone=value("halftone.mode")==2;f->dither.halftoneAngle=float(value("halftone.angle"));f->dither.halftoneGain=float(value("halftone.gain"));
     f->dither.threshold=int(value("param.threshold"));f->dither.workingResolution=int(value("param.resolution"));
     f->dither.invert=value("param.invert")!=0;f->dither.serpentine=value("param.serpentine")!=0;
     f->dither.tone={value("param.contrast"),value("param.midtones"),value("param.highlights")};

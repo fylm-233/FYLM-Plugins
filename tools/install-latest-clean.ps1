@@ -1,4 +1,4 @@
-param([ValidateSet('0.8.2','0.9.0','0.9.1','0.9.2','0.10.0','0.10.1','0.11.0','0.12.0','0.12.1','0.12.2','0.13.0')][string]$Version='0.8.2',[string]$AfterEffects='C:\Program Files\Adobe\Adobe After Effects 2026\Support Files')
+param([ValidateSet('0.8.2','0.9.0','0.9.1','0.9.2','0.10.0','0.10.1','0.11.0','0.12.0','0.12.1','0.12.2','0.13.0','0.13.2','0.14.0')][string]$Version='0.8.2',[string]$AfterEffects='C:\Program Files\Adobe\Adobe After Effects 2026\Support Files')
 $ErrorActionPreference='Stop'
 $root=Split-Path $PSScriptRoot -Parent
 $log=Join-Path $root ('docs/install-'+$Version+'.txt')

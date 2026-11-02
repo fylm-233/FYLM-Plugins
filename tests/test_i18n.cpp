@@ -44,9 +44,9 @@ int main() {
         for (std::size_t k = 0; k < loc::keyCount(); ++k)
             for (int l = 1; l <= 4; ++l) {
                 auto key = loc::keyAt(k), value = loc::text(loc::fromValue(l), key);
-                check(!value.empty() && value != key && utf8(value));
-                if (key.substr(0, 6) == "param.")
-                    check(value.size() <= 31);
+                if(value.empty()||value==key||!utf8(value))throw std::runtime_error("translation: "+std::string(key)+" locale "+std::to_string(l));
+                if (key.substr(0, 6) == "param." && key.find(".items")==std::string_view::npos)
+                    if(value.size()>31)throw std::runtime_error("label too long: "+std::string(key)+" locale "+std::to_string(l));
             }
         char small[8];
         loc::copyUtf8(small, sizeof(small), "演算法演算法");

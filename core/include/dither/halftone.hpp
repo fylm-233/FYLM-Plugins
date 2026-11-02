@@ -5,4 +5,5 @@ namespace dither {
 // Row-major feedback and immediate half-away-from-zero rounding are intentional.
 RenderResult applyHalftone(std::vector<std::uint8_t>& rgba,int width,int height,
                           float pitch=2.5f,IProgress* progress=nullptr) noexcept;
+RenderResult applyPrintHalftone(std::vector<std::uint8_t>& rgba,int width,int height,float pitch,float angle,float gain,IProgress* progress=nullptr) noexcept;
 }

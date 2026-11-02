@@ -29,6 +29,9 @@ struct RenderParams {
     bool invert = false, serpentine = true;
     int workingResolution = 512;
     float halftonePitch = 2.5f;
+    int orderedMatrix = 0; // 0 follows the existing algorithm.
+    bool smoothHalftone = false;
+    float halftoneAngle = 0, halftoneGain = 0;
     ToneParams tone;
     double errorStrength = 100;
     std::vector<Rgb8> palette;

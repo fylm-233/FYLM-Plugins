@@ -176,12 +176,12 @@ void algorithm(std::vector<std::uint8_t> &a, int w, int h, const RenderParams &p
                         q = {std::uint8_t(v), std::uint8_t(v), std::uint8_t(v)};
                 } else {
                     double cell;
-                    int n = p.algorithmId == 2 ? 4 : 8;
+                    int n = p.orderedMatrix ? p.orderedMatrix : p.algorithmId == 2 ? 4 : 8;
                     if (p.algorithmId == 17)
                         cell = blueNoise[(y % 64) * 64 + x % 64] / 4095.0;
                     else
                         cell =
-                            (n == 4 ? b4[(y % 4) * 4 + x % 4] : b8[(y % 8) * 8 + x % 8]) / double(n * n - 1);
+                            (n == 2 ? ((y%2)?((x%2)?1:3):((x%2)?2:0)) : n == 4 ? b4[(y % 4) * 4 + x % 4] : b8[(y % 8) * 8 + x % 8]) / double(n * n - 1);
                     if (pal) {
                         double base = g / 255.0 + ((p.threshold - 128) / 255.0) * 2;
                         if (p.algorithmId == 17)
@@ -223,6 +223,7 @@ RenderResult render(ConstImageView s, ImageView d, const RenderParams &p, IProgr
         if (s.rowBytes < sw || d.rowBytes < dw || size_t(s.height) > SIZE_MAX / s.rowBytes ||
             size_t(d.height) > SIZE_MAX / d.rowBytes)
             throw Failure{ErrorCode::InvalidStride, "invalid rowBytes"};
+        if(p.orderedMatrix!=0&&p.orderedMatrix!=2&&p.orderedMatrix!=4&&p.orderedMatrix!=8)return {false,"invalid ordered matrix",ErrorCode::InvalidParams};
         if (p.algorithmId != 1 && p.algorithmId != 2 && p.algorithmId != 8 && p.algorithmId != 15 &&
             p.algorithmId != 17 && p.algorithmId != 31)
             throw Failure{ErrorCode::UnsupportedAlgorithm, "algorithm not implemented"};
@@ -257,7 +258,7 @@ RenderResult render(ConstImageView s, ImageView d, const RenderParams &p, IProgr
             for (size_t i = 0; i < a.size(); i += 4)
                 for (int c = 0; c < 3; ++c)
                     a[i + c] = 255 - a[i + c];
-        if(p.algorithmId==31){auto result=applyHalftone(a,w,h,p.halftonePitch,progress);if(!result.ok)return result;}
+        if(p.algorithmId==31){auto result=p.smoothHalftone?applyPrintHalftone(a,w,h,p.halftonePitch,p.halftoneAngle,p.halftoneGain,progress):applyHalftone(a,w,h,p.halftonePitch,progress);if(!result.ok)return result;}
         else algorithm(a, w, h, p, progress);
         for (int y = 0; y < d.height; ++y) {
             tick(progress, y, d.height);

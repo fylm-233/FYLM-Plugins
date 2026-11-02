@@ -18,6 +18,10 @@ Three independent effects live together in the **FYLM Plugins** category. Use th
 
 Previews use original FYLM diagnostic artwork. They illustrate the effects, rather than screenshots of the AE interface.
 
+Pixel Art also includes four-tone **Amber CRT** and **1986 Plasma** palettes, a **2–8 colour custom palette** with AE’s native eyedropper, and selectable **2×2 / 4×4 / 8×8 Bayer grids**. Halftone offers smooth CMYK dots with rotation and dot gain. These are FYLM artistic interpretations, rather than hardware emulation.
+
+The Windows **Setup.exe** detects installed AE versions or lets you browse to another version. Select a target, close AE/aerender and click Install.
+
 ## Get started
 
 1. Close AE and aerender. Extract a Windows test package and run its `install.ps1` in administrator PowerShell.

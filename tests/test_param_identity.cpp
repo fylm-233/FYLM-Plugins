@@ -98,10 +98,10 @@ int main() {
             const auto &want = frozen[i - 1];
             require(actual.kind == want.kind, "parameter type changed");
             require(same(actual.key, want.key), "parameter key or order changed");
-            require(actual.low == want.low && (i==2?actual.high>=want.high:actual.high == want.high), "parameter range changed");
+            require(actual.low == want.low && ((i==2||i==3)?actual.high>=want.high:actual.high == want.high), "parameter range changed");
             require(actual.value == want.value, "parameter default changed");
-            require(i==2?actual.choices>=want.choices:actual.choices == want.choices, "popup choice count changed");
-            require(i==2?std::strncmp(actual.items,want.items,std::strlen(want.items))==0:same(actual.items, want.items), "historical popup labels changed");
+            require((i==2||i==3)?actual.choices>=want.choices:actual.choices == want.choices, "popup choice count changed");
+            require((i==2||i==3)?(std::strncmp(actual.items,want.items,std::strlen(want.items))==0&&(actual.items[std::strlen(want.items)]==0||actual.items[std::strlen(want.items)]=='|')):same(actual.items, want.items), "historical popup labels changed");
             require(fylm::index(want.key) == i, "key lookup does not match the frozen index");
         }
         // Appended parameters must start at 15 and keep their own ids; nothing may shift 1-14.

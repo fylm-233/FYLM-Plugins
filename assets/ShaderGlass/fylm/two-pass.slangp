@@ -1,0 +1,10 @@
+# FYLM GPL-3.0-or-later coordinate and multipass regression fixture
+shaders = 2
+shader0 = identity.slang
+shader1 = identity.slang
+filter_linear0 = true
+filter_linear1 = true
+scale_type0 = source
+scale_type1 = viewport
+float_framebuffer0 = true
+float_framebuffer1 = true

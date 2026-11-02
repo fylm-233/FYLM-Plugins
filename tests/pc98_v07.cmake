@@ -1,0 +1,8 @@
+execute_process(COMMAND "${CLI}" "${SOURCE}/tests/pixel-art-baselines/pc98-input.rgba" "${WORK}/pc98-compat.rgba" 384 256 3 pc98 RESULT_VARIABLE status)
+if(NOT status EQUAL 0)
+ message(FATAL_ERROR "PC98 compatibility render failed")
+endif()
+execute_process(COMMAND "${CMAKE_COMMAND}" -E compare_files "${WORK}/pc98-compat.rgba" "${SOURCE}/tests/pixel-art-baselines/pc98-v07.rgba" RESULT_VARIABLE status)
+if(NOT status EQUAL 0)
+ message(FATAL_ERROR "PC98 accepted 0.7 baseline changed")
+endif()

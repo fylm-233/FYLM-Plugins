@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "name": "Pocket Memory / 橄榄掌机",
+  "encoding": "srgb",
+  "preset_id": "PA01",
+  "palette_id": "FYLM.PA01.A.v1",
+  "content_sha256": "5a22efcd22f1eb0ae57703493bee683e7d0c916e6fb4b33b2bd31f4a18078137",
+  "color_origin": "original-authored-ramps; not official or directly extracted game palettes",
+  "colors": [
+    "#183B2D",
+    "#3F6750",
+    "#91A86B",
+    "#D8DEA0"
+  ]
+}

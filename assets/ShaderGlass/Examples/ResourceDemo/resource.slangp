@@ -1,0 +1,9 @@
+shaders = 1
+shader0 = resource.slang
+mipmap_input0 = true
+filter_linear0 = false
+textures = Lookup
+Lookup = lookup.bmp
+Lookup_linear = false
+Lookup_wrap_mode = repeat
+Lookup_mipmap = true

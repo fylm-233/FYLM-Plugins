@@ -1,0 +1,8 @@
+#include "library.hpp"
+#include <iostream>
+void require(bool ok,const char* text){if(!ok)throw std::runtime_error(text);}
+int main(){try{auto p=fylm::sg::builtinPreset(2);retro::RenderRequest r;r.size={160,96};r.input.resize(160*96*4);for(int y=0;y<96;y++)for(int x=0;x<160;x++){auto i=(y*160+x)*4;r.input[i]=x/159.f;r.input[i+1]=y/95.f;r.input[i+2]=.7f;r.input[i+3]=1;}
+ fylm::sg::Settings s;s.virtualHeight=48;auto baseline=fylm::sg::render(*p,r,s);require(baseline.ok,"baseline render");bool changed=false;
+ for(auto& c:p->controls){if(c.high<=c.low)continue;s.namedValues={{c.name,c.value==c.low?c.high:c.low}};auto value=fylm::sg::render(*p,r,s);require(value.ok,"named parameter render");if(value.pixels!=baseline.pixels){auto copy=*p;for(auto& control:copy.controls)if(control.name==c.name)control.value=s.namedValues[c.name];for(auto& pass:copy.passes)for(auto& u:pass.uniforms)if(u.name==c.name)u.value=s.namedValues[c.name];auto restored=fylm::sg::loadBytes(fylm::sg::encode(copy));s.namedValues.clear();auto embedded=fylm::sg::render(*restored,r,s);require(embedded.ok&&embedded.pixels==value.pixels,"advanced embedded values lost");changed=true;break;}}
+ require(changed,"advanced parameters never affected image");s.namedValues={{"unknown",1}};require(!fylm::sg::render(*p,r,s).ok,"unknown override ignored");s.namedValues.clear();auto unchanged=fylm::sg::render(*p,r,s);require(unchanged.ok&&unchanged.pixels==baseline.pixels,"custom copy altered built-in");std::cout<<"Named controls, custom-copy persistence and builtin isolation passed\n";
+ }catch(const std::exception& e){std::cerr<<e.what()<<'\n';return 1;}}

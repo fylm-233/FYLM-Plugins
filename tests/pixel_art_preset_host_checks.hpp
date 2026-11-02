@@ -1,0 +1,55 @@
+#if !defined(FYLM_CRT_ONLY) && !defined(FYLM_SHADERGLASS)
+static AEGP_DynStreamFlags presetVisibility[fylm::Count]{};
+static int presetKeys=-1,presetExpression=-1,presetSuiteLeases=0;static bool presetExpressionEnabled=false,presetSuiteFailure=false;
+void presetHostChecks(Host& h,PF_InData& in,PF_OutData& out){
+ PF_ParamUtilsSuite3 parameters{};parameters.PF_GetKeyframeCount=[](PF_ProgPtr,PF_ParamIndex index,PF_KeyIndex* count)->PF_Err{*count=index==presetKeys?1:0;return 0;};parameters.PF_UpdateParamUI=[](PF_ProgPtr,PF_ParamIndex,const PF_ParamDef*)->PF_Err{return 0;};
+ AEGP_UtilitySuite6 utility{};utility.AEGP_RegisterWithAEGP=[](AEGP_GlobalRefcon,const A_char*,AEGP_PluginID* id)->A_Err{*id=1;return 0;};
+ AEGP_PFInterfaceSuite1 bridge{};bridge.AEGP_GetNewEffectForEffect=[](AEGP_PluginID,PF_ProgPtr effect,AEGP_EffectRefH* handle)->A_Err{*handle=reinterpret_cast<AEGP_EffectRefH>(effect);return 0;};
+ AEGP_EffectSuite4 effects{};effects.AEGP_DisposeEffect=[](AEGP_EffectRefH)->A_Err{return 0;};
+ AEGP_StreamSuite5 streams{};streams.AEGP_GetNewEffectStreamByIndex=[](AEGP_PluginID,AEGP_EffectRefH,PF_ParamIndex index,AEGP_StreamRefH* stream)->A_Err{*stream=reinterpret_cast<AEGP_StreamRefH>(std::uintptr_t(index));return 0;};streams.AEGP_DisposeStream=[](AEGP_StreamRefH)->A_Err{return 0;};
+ streams.AEGP_GetExpressionState=[](AEGP_PluginID,AEGP_StreamRefH stream,A_Boolean* enabled)->A_Err{*enabled=int(reinterpret_cast<std::uintptr_t>(stream))==presetExpression&&presetExpressionEnabled;return 0;};streams.AEGP_GetExpression=[](AEGP_PluginID,AEGP_StreamRefH stream,AEGP_MemHandle* text)->A_Err{*text=nullptr;if(int(reinterpret_cast<std::uintptr_t>(stream))==presetExpression)*text=reinterpret_cast<AEGP_MemHandle>(new A_UTF16Char[2]{65,0});return 0;};
+ AEGP_MemorySuite1 memory{};memory.AEGP_LockMemHandle=[](AEGP_MemHandle handle,void** data)->A_Err{*data=reinterpret_cast<void*>(handle);return 0;};memory.AEGP_UnlockMemHandle=[](AEGP_MemHandle)->A_Err{return 0;};memory.AEGP_FreeMemHandle=[](AEGP_MemHandle handle)->A_Err{delete[] reinterpret_cast<A_UTF16Char*>(handle);return 0;};
+ AEGP_DynamicStreamSuite4 dynamic{};dynamic.AEGP_GetDynamicStreamFlags=[](AEGP_StreamRefH stream,AEGP_DynStreamFlags* flags)->A_Err{*flags=presetVisibility[reinterpret_cast<std::uintptr_t>(stream)];return 0;};dynamic.AEGP_SetDynamicStreamFlag=[](AEGP_StreamRefH stream,AEGP_DynStreamFlags flag,A_Boolean undoable,A_Boolean set)->A_Err{if(undoable||flag!=AEGP_DynStreamFlag_HIDDEN)return -1;auto& value=presetVisibility[reinterpret_cast<std::uintptr_t>(stream)];if(set)value|=flag;else value&=~flag;return 0;};
+ struct Suites{const void* dynamic;const void* params;const void* utility;const void* bridge;const void* effect;const void* streams;const void* memory;};static Suites suites;
+ suites={&dynamic,&parameters,&utility,&bridge,&effects,&streams,&memory};SPBasicSuite basic{};
+ basic.AcquireSuite=[](const char* name,int32,const void** suite)->SPErr{*suite=nullptr;if(std::strcmp(name,kPFParamUtilsSuite)==0)*suite=suites.params;else if(std::strcmp(name,kAEGPUtilitySuite)==0)*suite=suites.utility;else if(std::strcmp(name,kAEGPPFInterfaceSuite)==0)*suite=suites.bridge;else if(std::strcmp(name,kAEGPEffectSuite)==0)*suite=suites.effect;else if(std::strcmp(name,kAEGPStreamSuite)==0&&!presetSuiteFailure)*suite=suites.streams;else if(std::strcmp(name,kAEGPDynamicStreamSuite)==0)*suite=suites.dynamic;else if(std::strcmp(name,kAEGPMemorySuite)==0)*suite=suites.memory;if(!*suite)return -1;presetSuiteLeases++;return 0;};
+ basic.ReleaseSuite=[](const char*,int32)->SPErr{presetSuiteLeases--;return 0;};auto prior=in.pica_basicP;in.pica_basicP=&basic;in.width=1920;
+ PF_ParamDef* pointer[fylm::Count];for(int i=0;i<fylm::Count;i++)pointer[i]=&h.p[i];auto blob=fylm::index("pa.data");
+ PF_UserChangedParamExtra event{};event.param_index=53;
+ h.p[fylm::index("pa.origin_x")].u.sd.value=19;h.p[fylm::index("pa.alpha")].u.pd.value=2;h.p[fylm::index("gba.outline")].u.fs_d.value=41;
+ for(int preset=0;preset<12;preset++)for(int v=0;v<2;v++){
+  auto& current=pixel_art::artPresets()[preset];h.p[2].u.pd.value=current.mode;int chooser=paLibraryChooser(current.mode),ordinal=0;for(int n=0;n<preset;n++)if(pixel_art::artPresets()[n].mode==current.mode)ordinal++;h.p[chooser].u.pd.value=2+ordinal*2+v;event.param_index=chooser+1;h.p[2].uu.change_flags=0;
+  require(EffectMain(PF_Cmd_USER_CHANGED_PARAM,&in,&out,pointer,nullptr,&event)==0,"native library apply failed");require(presetSuiteLeases==0,"native preset suite leak");require(h.p[2].u.pd.value==current.mode&&h.p[2].uu.change_flags==0,"apply changed algorithm");for(int index=52;index<=57;index++)require(bool(presetVisibility[index]&AEGP_DynStreamFlag_HIDDEN)==(paLibraryMode(index)!=current.mode),"wrong mode preset visible");
+  auto& expected=pixel_art::artPresets()[preset];auto bytes=paRead(&in,h.p[blob].u.arb_d.value);auto decoded=nlohmann::json::parse(bytes.begin(),bytes.end());require(decoded["preset_id"]==expected.id&&decoded["palette_id"]==expected.variants[v].id,"embedded complete preset identity");require(paDecode(bytes).size()==expected.variants[v].colors.size(),"embedded palette count");
+  auto values=pixel_art::artPresetValues(expected,v,1920);for(auto& item:values){int i=fylm::index(item.first.c_str());auto kind=fylm::Params[i-1].kind;double actual=kind==fylm::Kind::Integer?h.p[i].u.sd.value:kind==fylm::Kind::Popup?h.p[i].u.pd.value:kind==fylm::Kind::Check?h.p[i].u.bd.value:h.p[i].u.fs_d.value;require(actual==item.second,"native preset parameter map");}
+  require(h.p[fylm::index("pa.origin_x")].u.sd.value==19&&h.p[fylm::index("pa.alpha")].u.pd.value==2,"preset changed coordinate or alpha preference");
+ }
+ h.p[2].u.pd.value=7;h.p[52].u.pd.value=2;event.param_index=53;auto previous=paRead(&in,h.p[blob].u.arb_d.value);int algorithm=h.p[2].u.pd.value;
+ for(int scenario=0;scenario<4;scenario++){presetKeys=scenario==0?15:-1;presetExpression=scenario==1||scenario==2?17:-1;presetExpressionEnabled=scenario==1;presetSuiteFailure=scenario==3;auto status=EffectMain(PF_Cmd_USER_CHANGED_PARAM,&in,&out,pointer,nullptr,&event);require(status!=0&&h.p[2].u.pd.value==algorithm&&paRead(&in,h.p[blob].u.arb_d.value)==previous,"animated/expression/unavailable guard was not atomic");require(presetSuiteLeases==0,"guard suite leak");}
+ presetKeys=presetExpression=-1;presetExpressionEnabled=presetSuiteFailure=false;h.p[52].u.pd.value=1;require(EffectMain(PF_Cmd_USER_CHANGED_PARAM,&in,&out,pointer,nullptr,&event)!=0,"empty preset selection accepted");
+ for(int mode=1;mode<=9;mode++){h.p[2].u.pd.value=mode;require(EffectMain(PF_Cmd_UPDATE_PARAMS_UI,&in,&out,pointer,nullptr,nullptr)==0,"mode visibility update");for(int i=52;i<=57;i++)require(bool(presetVisibility[i]&AEGP_DynStreamFlag_HIDDEN)==(paLibraryMode(i)!=mode),"classic or foreign menu visible");}
+ auto visible=[&](const char* key){return !(presetVisibility[fylm::index(key)]&AEGP_DynStreamFlag_HIDDEN);};
+ auto refresh=[&](){require(EffectMain(PF_Cmd_UPDATE_PARAMS_UI,&in,&out,pointer,nullptr,nullptr)==0,"conditional UI refresh");};
+ h.p[2].u.pd.value=7;h.p[16].u.pd.value=3;h.p[17].u.fs_d.value=65;h.p[25].u.pd.value=1;refresh();require(visible("pa.block")&&!visible("gba.block")&&!visible("modern.block")&&!visible("param.threshold")&&!visible("pa.alpha_threshold"),"PC98 active-only controls");
+ h.p[25].u.pd.value=2;h.p[16].u.pd.value=1;refresh();require(visible("pa.alpha_threshold")&&!visible("pa.strength")&&!visible("pa.edge"),"PC98 dependent controls");
+ h.p[2].u.pd.value=8;h.p[33].u.pd.value=2;refresh();require(visible("gba.block")&&!visible("pa.block")&&!visible("modern.block")&&!visible("gba.feature"),"GBA active-only controls");h.p[33].u.pd.value=3;refresh();require(visible("gba.feature"),"GBA feature reappears");
+ h.p[2].u.pd.value=9;h.p[39].u.fs_d.value=0;refresh();require(visible("modern.block")&&!visible("gba.block")&&!visible("pa.block")&&!visible("modern.cluster_area"),"Modern active-only controls");h.p[39].u.fs_d.value=35;refresh();require(visible("modern.cluster_area"),"Modern dependent area reappears");
+ h.p[2].u.pd.value=6;refresh();require(visible("halftone.bake")&&visible("halftone.pitch")&&visible("color.linear_srgb")&&!visible("pa.palette")&&!visible("param.palette"),"halftone active-only controls");h.p[2].u.pd.value=2;refresh();require(visible("param.threshold")&&!visible("param.serpentine")&&!visible("halftone.bake"),"classic controls");h.p[2].u.pd.value=1;refresh();require(visible("param.serpentine"),"Floyd serpentine visible");require(visible("param.algorithm")&&visible("effect.enabled"),"common controls hidden");
+ h.p[2].u.pd.value=7;h.p[52].u.pd.value=2;h.p[54].u.pd.value=3;h.p[56].u.pd.value=4;previous=paRead(&in,h.p[blob].u.arb_d.value);for(int action:{51,55,57}){event.param_index=action;require(EffectMain(PF_Cmd_USER_CHANGED_PARAM,&in,&out,pointer,nullptr,&event)!=0&&h.p[2].u.pd.value==7&&paRead(&in,h.p[blob].u.arb_d.value)==previous,"foreign or legacy apply accepted");}require(h.p[52].u.pd.value==2&&h.p[54].u.pd.value==3&&h.p[56].u.pd.value==4,"mode selection was reset");require(presetSuiteLeases==0,"visibility suite leak");
+
+ h.p[2].u.pd.value=7;h.p[1].u.bd.value=1;h.p[60].u.pd.value=1;
+ for(int profile=1;profile<=6;profile++){
+  h.p[58].u.pd.value=profile;h.p[19].u.pd.value=1;refresh();
+  require(!visible("pa.spec")&&!visible("pa.indexed_colors")&&!visible("pa.dac"),"retired controls visible");
+  require(visible("pa.colors")&&visible("pa.palette")&&visible("library.pc98.preset"),"legacy art workflow hidden by stale profile");
+  PF_PreRenderCallbacks pcb{};pcb.checkout_layer=layer;PF_PreRenderInput pi{};pi.bitdepth=32;pi.output_request.rect={0,0,in.width,in.height};PF_PreRenderOutput po{};PF_PreRenderExtra pre{&pi,&po,&pcb};h.checkins=0;
+  require(EffectMain(PF_Cmd_SMART_PRE_RENDER,&in,&out,nullptr,nullptr,&pre)==0,"legacy pre-render snapshot");std::unique_ptr<Frame> snapshot(static_cast<Frame*>(po.pre_render_data));
+  require(h.checkins==fylm::Count-1&&snapshot->pixel.pc98ColorSpec==pixel_art::PC98ColorSpec::Art,"stale hardware profile changed render");h.checkins=0;
+  auto legacy=pixel_art::stylePalette(pixel_art::Style::Basic);require(snapshot->pixel.palette.size()<=legacy.size(),"legacy palette count");for(std::size_t c=0;c<snapshot->pixel.palette.size();c++){auto a=snapshot->pixel.palette[c],b=legacy[c];require(a.r==b.r&&a.g==b.g&&a.b==b.b,"legacy palette changed");}
+  require(paDecode(paExportData(&in,pointer)).size()==16,"legacy palette export changed");
+ }
+ h.p[58].u.pd.value=4;h.p[52].u.pd.value=2;event.param_index=53;require(EffectMain(PF_Cmd_USER_CHANGED_PARAM,&in,&out,pointer,nullptr,&event)==0,"stale profile blocks art preset");h.p[58].u.pd.value=1;
+ auto complete=paEncode(pixel_art::pc98HardwarePalette(pixel_art::PC98ColorSpec::Indexed256));require(paDecode(complete).size()==256,"host rejects 256-entry palette JSON");
+ in.pica_basicP=prior;std::cout<<"P1 native apply: 24 variants, complete embedded palettes, scope, keyframes/expressions and fail-closed atomic guards passed\n";
+}
+#endif

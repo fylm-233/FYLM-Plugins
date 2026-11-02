@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "name": "FYLM PC-9801 RGB444 Reference 16",
+  "encoding": "srgb",
+  "pc98_color_spec": 2,
+  "palette_channel_bits": 4,
+  "color_origin": "FYLM mathematical/reference colour table, not an official game palette",
+  "content_sha256": "0486846bce28d698765bbab384d3a2f4d006dd1030f6c5fd4930929dd9a737ad",
+  "colors": [
+    "#111122",
+    "#332244",
+    "#553355",
+    "#774466",
+    "#AA6677",
+    "#CC9999",
+    "#EECCAA",
+    "#FFEECC",
+    "#223355",
+    "#335577",
+    "#447799",
+    "#77BBBB",
+    "#335544",
+    "#557755",
+    "#99AA66",
+    "#DDCC88"
+  ]
+}

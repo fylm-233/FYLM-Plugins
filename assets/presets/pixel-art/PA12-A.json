@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "Two-Tone Chronicle / 黑白网点",
+  "encoding": "srgb",
+  "preset_id": "PA12",
+  "palette_id": "FYLM.PA12.A.v1",
+  "content_sha256": "1c50602903d910222686ac30b683ef14641d0e1d1e092a62597a9ede0226eb40",
+  "color_origin": "original-authored-ramps; not official or directly extracted game palettes",
+  "colors": [
+    "#20282A",
+    "#E5D9B8"
+  ]
+}

@@ -1,0 +1,7688 @@
+{
+  "reference": "9298a44c54a8d02a5b5b5956c1c1c7f9785fda59",
+  "bitDepth": 8,
+  "workingResolution": 0,
+  "alpha": "Opaque",
+  "cases": [
+    {
+      "name": "0000",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0001",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0002",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0003",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0004",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "47c068d76fe06d48687e9670000c026ec3353bafd9e77b33446dafe004bb2d98"
+    },
+    {
+      "name": "0005",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "45f7f238d021c4b99fe64c1ed87e1ac9737c0b40bfbbed6fbed1a7e2b179668c"
+    },
+    {
+      "name": "0006",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0007",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0008",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9dc73737f92d2fdf3d15a345a39b2f211cdb33cbb3892ebe432e6eb08cf2a21d"
+    },
+    {
+      "name": "0009",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0010",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0011",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "08ddae0eea43b634ab0a88bfec51211a880aece5490952c9d44e95fd630e4504"
+    },
+    {
+      "name": "0012",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0013",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0014",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0015",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0016",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0017",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "4b8eede39e7b0dc077612182367da5cc990bd78263da8d480748c3bc8106eff3"
+    },
+    {
+      "name": "0018",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0019",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0020",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9dc73737f92d2fdf3d15a345a39b2f211cdb33cbb3892ebe432e6eb08cf2a21d"
+    },
+    {
+      "name": "0021",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "9dc73737f92d2fdf3d15a345a39b2f211cdb33cbb3892ebe432e6eb08cf2a21d"
+    },
+    {
+      "name": "0022",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0023",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "47c068d76fe06d48687e9670000c026ec3353bafd9e77b33446dafe004bb2d98"
+    },
+    {
+      "name": "0024",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0025",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0026",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0027",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0028",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "08ddae0eea43b634ab0a88bfec51211a880aece5490952c9d44e95fd630e4504"
+    },
+    {
+      "name": "0029",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "4b8eede39e7b0dc077612182367da5cc990bd78263da8d480748c3bc8106eff3"
+    },
+    {
+      "name": "0030",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0031",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0032",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0033",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0034",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "45f7f238d021c4b99fe64c1ed87e1ac9737c0b40bfbbed6fbed1a7e2b179668c"
+    },
+    {
+      "name": "0035",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0036",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0037",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0038",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0039",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0040",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0041",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0042",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0043",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0044",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0045",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0046",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "08ddae0eea43b634ab0a88bfec51211a880aece5490952c9d44e95fd630e4504"
+    },
+    {
+      "name": "0047",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0048",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0049",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0050",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9dc73737f92d2fdf3d15a345a39b2f211cdb33cbb3892ebe432e6eb08cf2a21d"
+    },
+    {
+      "name": "0051",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0052",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "47c068d76fe06d48687e9670000c026ec3353bafd9e77b33446dafe004bb2d98"
+    },
+    {
+      "name": "0053",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0054",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0055",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0056",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "a20919700203cc45d093b7e603ce41869bd8bb2d0d62fb3c4c94953a88b3996c"
+    },
+    {
+      "name": "0057",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0058",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "4b8eede39e7b0dc077612182367da5cc990bd78263da8d480748c3bc8106eff3"
+    },
+    {
+      "name": "0059",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "4b8eede39e7b0dc077612182367da5cc990bd78263da8d480748c3bc8106eff3"
+    },
+    {
+      "name": "0060",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0061",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0062",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9dc73737f92d2fdf3d15a345a39b2f211cdb33cbb3892ebe432e6eb08cf2a21d"
+    },
+    {
+      "name": "0063",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "a20919700203cc45d093b7e603ce41869bd8bb2d0d62fb3c4c94953a88b3996c"
+    },
+    {
+      "name": "0064",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "c5052eb988a517a06494e263521664d4f9cc08715c8f2a1e30649916fa8ee4e0"
+    },
+    {
+      "name": "0065",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "b7d32696dbb939f8c2f515f7a757ac72a32fc72c924e0d9691231a31b6894ffc"
+    },
+    {
+      "name": "0066",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0067",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0068",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0069",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0070",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0071",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "47c068d76fe06d48687e9670000c026ec3353bafd9e77b33446dafe004bb2d98"
+    },
+    {
+      "name": "0072",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0073",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0074",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0075",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0076",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "47c068d76fe06d48687e9670000c026ec3353bafd9e77b33446dafe004bb2d98"
+    },
+    {
+      "name": "0077",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "45f7f238d021c4b99fe64c1ed87e1ac9737c0b40bfbbed6fbed1a7e2b179668c"
+    },
+    {
+      "name": "0078",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0079",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0080",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9dc73737f92d2fdf3d15a345a39b2f211cdb33cbb3892ebe432e6eb08cf2a21d"
+    },
+    {
+      "name": "0081",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "9dc73737f92d2fdf3d15a345a39b2f211cdb33cbb3892ebe432e6eb08cf2a21d"
+    },
+    {
+      "name": "0082",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "47c068d76fe06d48687e9670000c026ec3353bafd9e77b33446dafe004bb2d98"
+    },
+    {
+      "name": "0083",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0084",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0085",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0086",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0087",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "a20919700203cc45d093b7e603ce41869bd8bb2d0d62fb3c4c94953a88b3996c"
+    },
+    {
+      "name": "0088",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "4b8eede39e7b0dc077612182367da5cc990bd78263da8d480748c3bc8106eff3"
+    },
+    {
+      "name": "0089",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "4b8eede39e7b0dc077612182367da5cc990bd78263da8d480748c3bc8106eff3"
+    },
+    {
+      "name": "0090",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0091",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0092",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0093",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0094",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "47c068d76fe06d48687e9670000c026ec3353bafd9e77b33446dafe004bb2d98"
+    },
+    {
+      "name": "0095",
+      "w": 1,
+      "h": 1,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "45f7f238d021c4b99fe64c1ed87e1ac9737c0b40bfbbed6fbed1a7e2b179668c"
+    },
+    {
+      "name": "0096",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0097",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0098",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9dc73737f92d2fdf3d15a345a39b2f211cdb33cbb3892ebe432e6eb08cf2a21d"
+    },
+    {
+      "name": "0099",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0100",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0101",
+      "w": 1,
+      "h": 1,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "08ddae0eea43b634ab0a88bfec51211a880aece5490952c9d44e95fd630e4504"
+    },
+    {
+      "name": "0102",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0103",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0104",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0105",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0106",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0107",
+      "w": 1,
+      "h": 1,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "4b8eede39e7b0dc077612182367da5cc990bd78263da8d480748c3bc8106eff3"
+    },
+    {
+      "name": "0108",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0109",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+    },
+    {
+      "name": "0110",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9dc73737f92d2fdf3d15a345a39b2f211cdb33cbb3892ebe432e6eb08cf2a21d"
+    },
+    {
+      "name": "0111",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "9dc73737f92d2fdf3d15a345a39b2f211cdb33cbb3892ebe432e6eb08cf2a21d"
+    },
+    {
+      "name": "0112",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0113",
+      "w": 1,
+      "h": 1,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "47c068d76fe06d48687e9670000c026ec3353bafd9e77b33446dafe004bb2d98"
+    },
+    {
+      "name": "0114",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0115",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e3820096cb82366b860b8a4e668453a7aaaf423af03bdf289fa308ea03a79332"
+    },
+    {
+      "name": "0116",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "99832ea0305120e4e7f399f70f65aa1f7a0bf8c656814772403d8cf43c0d9aa5"
+    },
+    {
+      "name": "0117",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cae08202ce7ff276c6f43140f65b3e487831b9648b4ea825e826aa568b859f4b"
+    },
+    {
+      "name": "0118",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "08ddae0eea43b634ab0a88bfec51211a880aece5490952c9d44e95fd630e4504"
+    },
+    {
+      "name": "0119",
+      "w": 1,
+      "h": 1,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "4b8eede39e7b0dc077612182367da5cc990bd78263da8d480748c3bc8106eff3"
+    },
+    {
+      "name": "0120",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5b7e936915b77d93c50d6f14c20bf4fd3e8a4e95472bc91badedc043856fd465"
+    },
+    {
+      "name": "0121",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0122",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0123",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0124",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "020526ee1048d3daddedc8b1d3a22ed7c120698e2bf7ae3bd24abd5db821b363"
+    },
+    {
+      "name": "0125",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9546ab3e9f002b6d3c221d6bc9d86b343985b87717d2e7aa2dc0b73138ea3a14"
+    },
+    {
+      "name": "0126",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5b7e936915b77d93c50d6f14c20bf4fd3e8a4e95472bc91badedc043856fd465"
+    },
+    {
+      "name": "0127",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "db88e52a1495527d8ee1084cecb564ea6d7679e4581b018738137acfce10a4f8"
+    },
+    {
+      "name": "0128",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "b03987ce1468025422e42eb1b51646769e465689ccb4c3512c516f52ffc9d6df"
+    },
+    {
+      "name": "0129",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0130",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0131",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "6ab9f58fa235a9298d1bbc31d8f32127a8cc4323190d209167f06fdb633d8817"
+    },
+    {
+      "name": "0132",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5b7e936915b77d93c50d6f14c20bf4fd3e8a4e95472bc91badedc043856fd465"
+    },
+    {
+      "name": "0133",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0134",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0135",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0136",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0137",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9020fe8bf823f746bed80872829cd335014ee7e3edb66491ef8b8dd896373199"
+    },
+    {
+      "name": "0138",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0139",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0140",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2423339c9f09690d96d078dc8b34f78c00e90dd83d223c72361b5d976524b1d6"
+    },
+    {
+      "name": "0141",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2423339c9f09690d96d078dc8b34f78c00e90dd83d223c72361b5d976524b1d6"
+    },
+    {
+      "name": "0142",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0143",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ca219634967c96b10f0dc1385de568f89537b653541908c8b382b47037c456ab"
+    },
+    {
+      "name": "0144",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0145",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f87c9d21690c28c48c635261ad2844e2db1329d231c4d0233ef1113302e46830"
+    },
+    {
+      "name": "0146",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0147",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0148",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9917459fca06a9ca38e50986508f881a282220dc28d1ef63560fbab78b4efaf4"
+    },
+    {
+      "name": "0149",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9020fe8bf823f746bed80872829cd335014ee7e3edb66491ef8b8dd896373199"
+    },
+    {
+      "name": "0150",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0151",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0152",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0153",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0154",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "54c4780469b2e2b50f78e72383b0b7f1da4e76b3c8212523a1cc9e8d71c927cb"
+    },
+    {
+      "name": "0155",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0156",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0157",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0158",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0159",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0160",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0161",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0162",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0163",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0164",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0165",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0166",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "6ab9f58fa235a9298d1bbc31d8f32127a8cc4323190d209167f06fdb633d8817"
+    },
+    {
+      "name": "0167",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0168",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0169",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0170",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2423339c9f09690d96d078dc8b34f78c00e90dd83d223c72361b5d976524b1d6"
+    },
+    {
+      "name": "0171",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0172",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ca219634967c96b10f0dc1385de568f89537b653541908c8b382b47037c456ab"
+    },
+    {
+      "name": "0173",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0174",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0175",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0176",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "d9fb32627afca1c39654b8f3a63bb18761eeb5b922d6b8650ddce211dd0ac43d"
+    },
+    {
+      "name": "0177",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0178",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9020fe8bf823f746bed80872829cd335014ee7e3edb66491ef8b8dd896373199"
+    },
+    {
+      "name": "0179",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9020fe8bf823f746bed80872829cd335014ee7e3edb66491ef8b8dd896373199"
+    },
+    {
+      "name": "0180",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "239e351611f09925620e9351bfc47fb0f398b99dbc28f10cc814810403a4f161"
+    },
+    {
+      "name": "0181",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2a046ad0ffb8700d67364669f1521774234f990a74b9cc3bfbe96afa8e0edd84"
+    },
+    {
+      "name": "0182",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f37ee438917c4dba219de87a558fdb459c8999bf07b04de0bca004c1921ede83"
+    },
+    {
+      "name": "0183",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "0f9204775168e32021eaf62b45642122cae98e19fd4207707741b4fa3b52cae7"
+    },
+    {
+      "name": "0184",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "dbcef08c6d3c696dd4edd688ef8c3b605bb790020890bcb50a5ab2efc45e2c20"
+    },
+    {
+      "name": "0185",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9657f0e931a875af3292d81568d152b51ea28f6a347d98f3c0080594b3dfe3a6"
+    },
+    {
+      "name": "0186",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "239e351611f09925620e9351bfc47fb0f398b99dbc28f10cc814810403a4f161"
+    },
+    {
+      "name": "0187",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "03e1753660d90b22b0df539a665ed8a465f7f3a56c42b798e9d74b356000f9ce"
+    },
+    {
+      "name": "0188",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0189",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0190",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0191",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1bcece5e1a4bd9e51e64c5c30b8247011f29b619743778b46742b4ec854375f0"
+    },
+    {
+      "name": "0192",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "58335d78fe0b8040fe564093a471af3ee342e67b0f2391e4373ac7ce9554c7a5"
+    },
+    {
+      "name": "0193",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "db88e52a1495527d8ee1084cecb564ea6d7679e4581b018738137acfce10a4f8"
+    },
+    {
+      "name": "0194",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0195",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0196",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1bcece5e1a4bd9e51e64c5c30b8247011f29b619743778b46742b4ec854375f0"
+    },
+    {
+      "name": "0197",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "d9441de56fd9314726a453f5a380c989997d7248d19a08a011b788e4c7fd4896"
+    },
+    {
+      "name": "0198",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0199",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0200",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2423339c9f09690d96d078dc8b34f78c00e90dd83d223c72361b5d976524b1d6"
+    },
+    {
+      "name": "0201",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2423339c9f09690d96d078dc8b34f78c00e90dd83d223c72361b5d976524b1d6"
+    },
+    {
+      "name": "0202",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ca219634967c96b10f0dc1385de568f89537b653541908c8b382b47037c456ab"
+    },
+    {
+      "name": "0203",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0204",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0205",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0206",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0207",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "b4038cc154657b14121d83992466472935773a696923986e54ad97129bc39b3a"
+    },
+    {
+      "name": "0208",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9020fe8bf823f746bed80872829cd335014ee7e3edb66491ef8b8dd896373199"
+    },
+    {
+      "name": "0209",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9020fe8bf823f746bed80872829cd335014ee7e3edb66491ef8b8dd896373199"
+    },
+    {
+      "name": "0210",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5b7e936915b77d93c50d6f14c20bf4fd3e8a4e95472bc91badedc043856fd465"
+    },
+    {
+      "name": "0211",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0212",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0213",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0214",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "a9f80cca9e1d8c100957b285b21b001423b1437e06e2fb5074b059cb2e1cf7ab"
+    },
+    {
+      "name": "0215",
+      "w": 2,
+      "h": 2,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9527a68f82428cf1ef3c37d0df759b6e638c255dc462e48d8bc5ae6fad4b4871"
+    },
+    {
+      "name": "0216",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5b7e936915b77d93c50d6f14c20bf4fd3e8a4e95472bc91badedc043856fd465"
+    },
+    {
+      "name": "0217",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "db88e52a1495527d8ee1084cecb564ea6d7679e4581b018738137acfce10a4f8"
+    },
+    {
+      "name": "0218",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "b03987ce1468025422e42eb1b51646769e465689ccb4c3512c516f52ffc9d6df"
+    },
+    {
+      "name": "0219",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0220",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0221",
+      "w": 2,
+      "h": 2,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "d43d8952b3a2a1343e24379684250659003674a558bfce509fca18d7a592da12"
+    },
+    {
+      "name": "0222",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5b7e936915b77d93c50d6f14c20bf4fd3e8a4e95472bc91badedc043856fd465"
+    },
+    {
+      "name": "0223",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0224",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0225",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0226",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0227",
+      "w": 2,
+      "h": 2,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "3a6a5d9e0899cc0490dc458c4fb76e59f445580bb567d81c6277f411bfa22602"
+    },
+    {
+      "name": "0228",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0229",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "5ac6a5945f16500911219129984ba8b387a06f24fe383ce4e81a73294065461b"
+    },
+    {
+      "name": "0230",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2423339c9f09690d96d078dc8b34f78c00e90dd83d223c72361b5d976524b1d6"
+    },
+    {
+      "name": "0231",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2423339c9f09690d96d078dc8b34f78c00e90dd83d223c72361b5d976524b1d6"
+    },
+    {
+      "name": "0232",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0233",
+      "w": 2,
+      "h": 2,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ca219634967c96b10f0dc1385de568f89537b653541908c8b382b47037c456ab"
+    },
+    {
+      "name": "0234",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0235",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cc0fa51d4d0a97b664030be5052f3b2b69a1267f89ace4c9bbc65007566725df"
+    },
+    {
+      "name": "0236",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2ff4147848d373411394af40da7fbf9cf844717d6b18b7e3288adf7cf75908c4"
+    },
+    {
+      "name": "0237",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "fa0a8df7c1e7aecbd9212f484663593ed4c87df8bdaef1e646fcd4819d03de6e"
+    },
+    {
+      "name": "0238",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "80e06b5ed5acc0cada4f761a3bf1361df192f2b8ddffbb0a01ef3d4696bbdeb5"
+    },
+    {
+      "name": "0239",
+      "w": 2,
+      "h": 2,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9020fe8bf823f746bed80872829cd335014ee7e3edb66491ef8b8dd896373199"
+    },
+    {
+      "name": "0240",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "e8fa63afd9806c7f3016110fe36b1e0027a61b049f5df89df5f20b633f3b462c"
+    },
+    {
+      "name": "0241",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "0cda43408c8cfcd557d6e0d43df18ddc43fd94eaa9d6f5648b94178396867382"
+    },
+    {
+      "name": "0242",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2ecd72026a7b8b2e5946a60f7ded9a6d0cf963efa993b882147098aaac664caa"
+    },
+    {
+      "name": "0243",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0244",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "187dbacb6a9cf0e23070a5feb7efdbba8517b90402987fe4a129a5b149925d93"
+    },
+    {
+      "name": "0245",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "c2a6235e17427f8f145f82cd47afeab6968c542fecd9c473709e5d15cc3c2d65"
+    },
+    {
+      "name": "0246",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "061ad44fd7a96b9fd2c90e57d99d1dcc4fbf39f40d9e9b099c67e138a460002e"
+    },
+    {
+      "name": "0247",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "dbac81d94de35e647b4d45a820847ef64da718e11f3430bbf5735897ffd39f63"
+    },
+    {
+      "name": "0248",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2e1e44c955a1a38693b99e567724c1e36c936528b40b9fa8db06bc37de24160d"
+    },
+    {
+      "name": "0249",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0250",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0251",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "b619b6d3fb02a7bc3ae9e710be3497dea58ae02071a3ff3f23459d3ebdba1b3d"
+    },
+    {
+      "name": "0252",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "feacf991936f69aad8b219fe28c01ff4c121bf7e437c3a11e4eb79f23805de30"
+    },
+    {
+      "name": "0253",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "0cda43408c8cfcd557d6e0d43df18ddc43fd94eaa9d6f5648b94178396867382"
+    },
+    {
+      "name": "0254",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0255",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ecd72026a7b8b2e5946a60f7ded9a6d0cf963efa993b882147098aaac664caa"
+    },
+    {
+      "name": "0256",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0257",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9cda763fc944574a0c8573d938f2dcf6d6fbc51dd01d03b780c5a8b2cae9cc81"
+    },
+    {
+      "name": "0258",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0259",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "0cda43408c8cfcd557d6e0d43df18ddc43fd94eaa9d6f5648b94178396867382"
+    },
+    {
+      "name": "0260",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "bf866d010aceb21d2f218488564f47f88306829fb0d9d9d048463b0c86d74346"
+    },
+    {
+      "name": "0261",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "bf866d010aceb21d2f218488564f47f88306829fb0d9d9d048463b0c86d74346"
+    },
+    {
+      "name": "0262",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0263",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "6b005530d190440978ba8eac65f197994068e638fc310080bb5fa69886e65d1b"
+    },
+    {
+      "name": "0264",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0265",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "b1122f6f26cac49ce575009e923e532a0382efa72b4dcdfb9e182f4254cffdc3"
+    },
+    {
+      "name": "0266",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2ecd72026a7b8b2e5946a60f7ded9a6d0cf963efa993b882147098aaac664caa"
+    },
+    {
+      "name": "0267",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0268",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "fbdc6ca0e8114a33c0cd768541496556a9302db63f7d992f36ece31c73137b14"
+    },
+    {
+      "name": "0269",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9cda763fc944574a0c8573d938f2dcf6d6fbc51dd01d03b780c5a8b2cae9cc81"
+    },
+    {
+      "name": "0270",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "0cda43408c8cfcd557d6e0d43df18ddc43fd94eaa9d6f5648b94178396867382"
+    },
+    {
+      "name": "0271",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0272",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0273",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "1d2a9e245979af4c08a47d251e90b734b47328c19d3bff1dc08207cfaa85b4f2"
+    },
+    {
+      "name": "0274",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "fd758d22839240a04a5b89e5f6718c5b7cc5186b3630de958a423924d8cd2734"
+    },
+    {
+      "name": "0275",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0276",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "0cda43408c8cfcd557d6e0d43df18ddc43fd94eaa9d6f5648b94178396867382"
+    },
+    {
+      "name": "0277",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0278",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0279",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0280",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0281",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0282",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "0cda43408c8cfcd557d6e0d43df18ddc43fd94eaa9d6f5648b94178396867382"
+    },
+    {
+      "name": "0283",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0284",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0285",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ecd72026a7b8b2e5946a60f7ded9a6d0cf963efa993b882147098aaac664caa"
+    },
+    {
+      "name": "0286",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "b619b6d3fb02a7bc3ae9e710be3497dea58ae02071a3ff3f23459d3ebdba1b3d"
+    },
+    {
+      "name": "0287",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0288",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "0cda43408c8cfcd557d6e0d43df18ddc43fd94eaa9d6f5648b94178396867382"
+    },
+    {
+      "name": "0289",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0290",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "bf866d010aceb21d2f218488564f47f88306829fb0d9d9d048463b0c86d74346"
+    },
+    {
+      "name": "0291",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ecd72026a7b8b2e5946a60f7ded9a6d0cf963efa993b882147098aaac664caa"
+    },
+    {
+      "name": "0292",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "6b005530d190440978ba8eac65f197994068e638fc310080bb5fa69886e65d1b"
+    },
+    {
+      "name": "0293",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0294",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "0cda43408c8cfcd557d6e0d43df18ddc43fd94eaa9d6f5648b94178396867382"
+    },
+    {
+      "name": "0295",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0296",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2c94c162a4c851a1f77b1eb9154fb5cf774289b9e24ab798ab78842658b5a8d9"
+    },
+    {
+      "name": "0297",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ecd72026a7b8b2e5946a60f7ded9a6d0cf963efa993b882147098aaac664caa"
+    },
+    {
+      "name": "0298",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9cda763fc944574a0c8573d938f2dcf6d6fbc51dd01d03b780c5a8b2cae9cc81"
+    },
+    {
+      "name": "0299",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62a7cbfddc3c79dbeeccbe2f8afbeda585ff30603871af814aa86852a125dfaa"
+    },
+    {
+      "name": "0300",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "45b81605ae709773c59ba6d560298d9b1c55acb8a544d81c03bfcdbd982147a6"
+    },
+    {
+      "name": "0301",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "d73d3189beb6930b9ce1d7dc4624c4083820e6f9b11bd130d75390875391b5fd"
+    },
+    {
+      "name": "0302",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e177497eff5d618bff6dd0a73e913421df86ea0d67c351e1ea84fe503b4db3fe"
+    },
+    {
+      "name": "0303",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "db08a3b02b62d15d9f6f6a3dc484dc2a3adff7124aae7a6c8a997ac218f5c264"
+    },
+    {
+      "name": "0304",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2c270276c2b466e9e4f26abb6172f688b2e7edad98cb8f265f6cede007cc388f"
+    },
+    {
+      "name": "0305",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "85767a7e58d2dc3fc8e2b0a3fa6e17b30a9eb97209390e2f82d556033447ab36"
+    },
+    {
+      "name": "0306",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "f06a813eee40cbf7d39df72fd39ff9e640ea01c75243345c2cc8bb822e1f98b7"
+    },
+    {
+      "name": "0307",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "102270b1e561999b591a91dbf805ad11143c0c2ea776424d111ced303cd48297"
+    },
+    {
+      "name": "0308",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0309",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0310",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0311",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "40c7c346bafe1ba47d2db742564332bab5e9503e3cb978cd706ae35902d7dc2f"
+    },
+    {
+      "name": "0312",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "aaf33253f89f2d50d4ff4405efffe49b146f78430c40b627a9069f194a12176d"
+    },
+    {
+      "name": "0313",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "78d3d4472c3df2f2d376095955e0c170134457402b268f2ea65d0ad205895b18"
+    },
+    {
+      "name": "0314",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0315",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ecd72026a7b8b2e5946a60f7ded9a6d0cf963efa993b882147098aaac664caa"
+    },
+    {
+      "name": "0316",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "6852dbced84a05b70a83067850f76f91e6a60d4670843dbcd9c645b5aff61519"
+    },
+    {
+      "name": "0317",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "c63a8c89d58df45a977264961e5dffbdc6a6356981ef2142587e935882d3addc"
+    },
+    {
+      "name": "0318",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0319",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "0cda43408c8cfcd557d6e0d43df18ddc43fd94eaa9d6f5648b94178396867382"
+    },
+    {
+      "name": "0320",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "bf866d010aceb21d2f218488564f47f88306829fb0d9d9d048463b0c86d74346"
+    },
+    {
+      "name": "0321",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "bf866d010aceb21d2f218488564f47f88306829fb0d9d9d048463b0c86d74346"
+    },
+    {
+      "name": "0322",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "6b005530d190440978ba8eac65f197994068e638fc310080bb5fa69886e65d1b"
+    },
+    {
+      "name": "0323",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0324",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0325",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0326",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2ecd72026a7b8b2e5946a60f7ded9a6d0cf963efa993b882147098aaac664caa"
+    },
+    {
+      "name": "0327",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "c636ba199b18f4a5f948ffc019e66d43d980a03c5fa1039be1dfd2f6d5fb3685"
+    },
+    {
+      "name": "0328",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9cda763fc944574a0c8573d938f2dcf6d6fbc51dd01d03b780c5a8b2cae9cc81"
+    },
+    {
+      "name": "0329",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9cda763fc944574a0c8573d938f2dcf6d6fbc51dd01d03b780c5a8b2cae9cc81"
+    },
+    {
+      "name": "0330",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "36e334640cec7314f64b3ea425f5ebedc8e4a32eb256a775bd632b4ddf09dfc9"
+    },
+    {
+      "name": "0331",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "16db75f907c373b5741ac77f6ca07c4b298822b54446c0359dd479a664d6ae6a"
+    },
+    {
+      "name": "0332",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "b850b38d9b5776620b41d1553968db82a1fdf7764e47319db18277d36be0f105"
+    },
+    {
+      "name": "0333",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "9eccf29796ad8aa2a450cec9f7550ac1a6dbdac3d5cb18861b86fec2e181769d"
+    },
+    {
+      "name": "0334",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "bdd157510991329a5493e315a7bd9de721b53e1dd7aef8e53532aacfdbafdec7"
+    },
+    {
+      "name": "0335",
+      "w": 17,
+      "h": 13,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "26eb2262284c8c14b413d69a2149d9bbe2eeb6f1397eb20cc40c5ce202be08d4"
+    },
+    {
+      "name": "0336",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "54fac1117330bf6f47936ac1342263ad0430a992620487ce7ab20874b9f92cc1"
+    },
+    {
+      "name": "0337",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cf6329a96b383f435602cb2b1067e1f22aa103066cddb90f4c422343bcd9b105"
+    },
+    {
+      "name": "0338",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "113fcaa2d424cc3a756033ca7f51fc93768f0fbe4e5245de55c214f7ea9ea5f8"
+    },
+    {
+      "name": "0339",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0340",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ef5a59df0821170b2aec1ae542ba666d7c29dc01a4284f1030ff02ce06d351f7"
+    },
+    {
+      "name": "0341",
+      "w": 17,
+      "h": 13,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ee4820d3abf265934642272a9894bdf2628542261ab88984750b7e7c9d0d952f"
+    },
+    {
+      "name": "0342",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "b0aa3d8344d367d957132a1069d92877fc9c314bda19a5b94d60424d72661a1d"
+    },
+    {
+      "name": "0343",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "05e6d4cc71bc70edfa0ec5d0fcee878b3bf24e0e44460377d495001f0a645c9b"
+    },
+    {
+      "name": "0344",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1adcc45254c28d92f776520d1a8e1889dcefee8411853095abf4510de96b2f9c"
+    },
+    {
+      "name": "0345",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "2ecd72026a7b8b2e5946a60f7ded9a6d0cf963efa993b882147098aaac664caa"
+    },
+    {
+      "name": "0346",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "0204d310bab2f0a4253ec62359abc917613c686fdead9a17038f87d027d592ac"
+    },
+    {
+      "name": "0347",
+      "w": 17,
+      "h": 13,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f2bdf72263c00f09075d554a86be987ee40251425eca66bf0c3b71eab14947e5"
+    },
+    {
+      "name": "0348",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "4c8265ce8aa560f53bfd0b40f8d5fa1edbfae484bcaf6250d157444b478a33f1"
+    },
+    {
+      "name": "0349",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ba1c84138fe2b4ac7e0104b29304de8bc338db4840a1b75186626569f3abf6f2"
+    },
+    {
+      "name": "0350",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "bf866d010aceb21d2f218488564f47f88306829fb0d9d9d048463b0c86d74346"
+    },
+    {
+      "name": "0351",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "58cd4418fa2237cce68ef8a9b54d07551a5fb980306effca48d5428cf6ea252e"
+    },
+    {
+      "name": "0352",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "6eb82de563d27ea352171a1206ce2fb32d274e487e3235ba171ab4a54ddb1f7f"
+    },
+    {
+      "name": "0353",
+      "w": 17,
+      "h": 13,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "90f93aac65907c47d089151071db6cc4d9fb2a22094324dedabc5b40c148e8e3"
+    },
+    {
+      "name": "0354",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "5f0438a3f8292cc632005e932f8e2cccf2c0f0354e3652dbaf5639d16e3106b2"
+    },
+    {
+      "name": "0355",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "37a4c5b00bcdbe369a5b78372502fe4cf1cd50ccf7f04305cd8d82eaf62bcd9b"
+    },
+    {
+      "name": "0356",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "19c0053c5ea684665d1a5ef50d1be3ef35d60b43ff779ec6521649f133a8bf0a"
+    },
+    {
+      "name": "0357",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "fe4c3fd3288276dd9842a3279c4edd076c121b821aade42ebf5531158bbf9e6f"
+    },
+    {
+      "name": "0358",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "0124c1037c926b56a1d033b96c87aba7f60a483f311eff348e2306fea015784d"
+    },
+    {
+      "name": "0359",
+      "w": 17,
+      "h": 13,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "9cda763fc944574a0c8573d938f2dcf6d6fbc51dd01d03b780c5a8b2cae9cc81"
+    },
+    {
+      "name": "0360",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "fff709fa115cf48fdc0ec6f8bb1ddb5f89a3df4c84f94e00cb9886a3fb3dd77d"
+    },
+    {
+      "name": "0361",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "0fbba07a833d4dcfc7024eaf313661a0ba8f80a05c6d29b8801c612e10e60dee"
+    },
+    {
+      "name": "0362",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "73d131ecf4cf0f2343ec4a7339926be499940910b22367605e2f78c82e0cb16f"
+    },
+    {
+      "name": "0363",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0364",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f35eec8182d9525f7e41965d965a0167e3d054fea398f65f33a0a82cf6d92fa9"
+    },
+    {
+      "name": "0365",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e29f9f1c087d0b0c3cbe4f99ecb3d2a339f48e4151d2676e742984aaf5a4884d"
+    },
+    {
+      "name": "0366",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "b8d245e13543142d6f096ad0330d2e56aa9430cd69c33467f0750749da2e719a"
+    },
+    {
+      "name": "0367",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ed685dd29ccf1160e1e70a77ebcd42b4e233a058a5049e5e637c6869f477e815"
+    },
+    {
+      "name": "0368",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "93ca6c1ad508db9ea6c8b45aa69f002494a7b59e8ae2055af08f20c7aaadf16d"
+    },
+    {
+      "name": "0369",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0370",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0371",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "d3fb231d2a92517d6f746aa94ad508a47d2b29bacfb4d7996dbe32e54486757b"
+    },
+    {
+      "name": "0372",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "e55e01fa4b484a1d3e68024fa69428802e0cd37a64e7aa39cf23fc57d3c6d121"
+    },
+    {
+      "name": "0373",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "0fbba07a833d4dcfc7024eaf313661a0ba8f80a05c6d29b8801c612e10e60dee"
+    },
+    {
+      "name": "0374",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0375",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "73d131ecf4cf0f2343ec4a7339926be499940910b22367605e2f78c82e0cb16f"
+    },
+    {
+      "name": "0376",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0377",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f1829d1355ad82ea6f156464dc925ff06d3e27550c67d653a9b554f98ceabc27"
+    },
+    {
+      "name": "0378",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0379",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "0fbba07a833d4dcfc7024eaf313661a0ba8f80a05c6d29b8801c612e10e60dee"
+    },
+    {
+      "name": "0380",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "119d4ff4bfd87c51c289b4f28aa867b76f68708e04c4fdc5c7a3280fb542426b"
+    },
+    {
+      "name": "0381",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "119d4ff4bfd87c51c289b4f28aa867b76f68708e04c4fdc5c7a3280fb542426b"
+    },
+    {
+      "name": "0382",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0383",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "6e39264086921e9ad8aa6013836d54a156d6e01690dbb6abc3c7fce0097da62d"
+    },
+    {
+      "name": "0384",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0385",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2966f247b160565cb1af851fcb43172c0e36d131623cf0fbe5f3a2fc6c075893"
+    },
+    {
+      "name": "0386",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "73d131ecf4cf0f2343ec4a7339926be499940910b22367605e2f78c82e0cb16f"
+    },
+    {
+      "name": "0387",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0388",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "71d84e4cd29de4d914e3afed80c7dddfd86b13c6508b3fa83ad4784bb2408e95"
+    },
+    {
+      "name": "0389",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f1829d1355ad82ea6f156464dc925ff06d3e27550c67d653a9b554f98ceabc27"
+    },
+    {
+      "name": "0390",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "0fbba07a833d4dcfc7024eaf313661a0ba8f80a05c6d29b8801c612e10e60dee"
+    },
+    {
+      "name": "0391",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0392",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0393",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "7794cec580b5278116daad441e8bc6e194762da3027031ed6f15f5c76c982361"
+    },
+    {
+      "name": "0394",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "c6e7b953acf2e888d0d1c16c310845cbb5ad9dc619395ca1f301a794689f7312"
+    },
+    {
+      "name": "0395",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0396",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "0fbba07a833d4dcfc7024eaf313661a0ba8f80a05c6d29b8801c612e10e60dee"
+    },
+    {
+      "name": "0397",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0398",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0399",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0400",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0401",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0402",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "0fbba07a833d4dcfc7024eaf313661a0ba8f80a05c6d29b8801c612e10e60dee"
+    },
+    {
+      "name": "0403",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0404",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0405",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "73d131ecf4cf0f2343ec4a7339926be499940910b22367605e2f78c82e0cb16f"
+    },
+    {
+      "name": "0406",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "d3fb231d2a92517d6f746aa94ad508a47d2b29bacfb4d7996dbe32e54486757b"
+    },
+    {
+      "name": "0407",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0408",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "0fbba07a833d4dcfc7024eaf313661a0ba8f80a05c6d29b8801c612e10e60dee"
+    },
+    {
+      "name": "0409",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0410",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "119d4ff4bfd87c51c289b4f28aa867b76f68708e04c4fdc5c7a3280fb542426b"
+    },
+    {
+      "name": "0411",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "73d131ecf4cf0f2343ec4a7339926be499940910b22367605e2f78c82e0cb16f"
+    },
+    {
+      "name": "0412",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "6e39264086921e9ad8aa6013836d54a156d6e01690dbb6abc3c7fce0097da62d"
+    },
+    {
+      "name": "0413",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0414",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "0fbba07a833d4dcfc7024eaf313661a0ba8f80a05c6d29b8801c612e10e60dee"
+    },
+    {
+      "name": "0415",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0416",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "35c44f72fa15dac78dc2fc8984b45efb749d349472d1bcc8ceb6877af5ee5b4c"
+    },
+    {
+      "name": "0417",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "73d131ecf4cf0f2343ec4a7339926be499940910b22367605e2f78c82e0cb16f"
+    },
+    {
+      "name": "0418",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f1829d1355ad82ea6f156464dc925ff06d3e27550c67d653a9b554f98ceabc27"
+    },
+    {
+      "name": "0419",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "edea907d9d5b8aaad9ddcbeb69e2c9ec0e50b5950b18d3667c6088f1d8d8d7c4"
+    },
+    {
+      "name": "0420",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "ccfbcaa15745736dfa9d75d364fd937da92280cd6de904a5b5e665ba13d50f61"
+    },
+    {
+      "name": "0421",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "38d28ac7b3f2f478d2d426bf1acd9ed7757abdb2659f9ed4e79c86daa7ebc202"
+    },
+    {
+      "name": "0422",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "2d07e86d56f96a42d19eaea7ce9b7eeae68bc19630d566df16fa7eed5d6db06c"
+    },
+    {
+      "name": "0423",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "8bc9662c7fbbc4066f915863b27b522f231b3df0f1c746c573ee7af150e9ae41"
+    },
+    {
+      "name": "0424",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "e27fab0520b208ca42d59a8c7abe1b8db1311609690c32f0700f787da59bbc47"
+    },
+    {
+      "name": "0425",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "0c4ce94ae122e858c293fc2b85d8685a15dfa82ecaf2381a4914ab610e26d920"
+    },
+    {
+      "name": "0426",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "c3af06689cd677659e996e1cfaf4706cc95687e9baed712e6263ecf43aa0188f"
+    },
+    {
+      "name": "0427",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "5123361c48b1b3b976b54aaf49336eed03191d396eb83694c161084c273745c5"
+    },
+    {
+      "name": "0428",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0429",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0430",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0431",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "227abb019fe8b4cb15a1694e9b8eaeaa2007aa91134c29e91aaaf0d882dbc10c"
+    },
+    {
+      "name": "0432",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "1110de30a3f505788b60beaead901e17d8fe1c54281650148e9e7a8342a0053d"
+    },
+    {
+      "name": "0433",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "98a43f7bd15e9a7a6aa19fb68d6df97241e9c63ac84e59d1e9360437cbcd35ca"
+    },
+    {
+      "name": "0434",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0435",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "73d131ecf4cf0f2343ec4a7339926be499940910b22367605e2f78c82e0cb16f"
+    },
+    {
+      "name": "0436",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1f21a9f57db68523b606df59b37160a189a1dfb4fa03c73a278781ee037654f9"
+    },
+    {
+      "name": "0437",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "8d71e8b9fbbf618f13a88df309945a8986b043aac554d5d50e5d0f7a238cce59"
+    },
+    {
+      "name": "0438",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0439",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "0fbba07a833d4dcfc7024eaf313661a0ba8f80a05c6d29b8801c612e10e60dee"
+    },
+    {
+      "name": "0440",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "119d4ff4bfd87c51c289b4f28aa867b76f68708e04c4fdc5c7a3280fb542426b"
+    },
+    {
+      "name": "0441",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "119d4ff4bfd87c51c289b4f28aa867b76f68708e04c4fdc5c7a3280fb542426b"
+    },
+    {
+      "name": "0442",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "6e39264086921e9ad8aa6013836d54a156d6e01690dbb6abc3c7fce0097da62d"
+    },
+    {
+      "name": "0443",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0444",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0445",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0446",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "acdf041e96309b2355f02403f22826015b7d03884fc929ba3d6a8a61bb4f578f"
+    },
+    {
+      "name": "0447",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "508f22e4143544e31e2a189eeddb43d801af7c4a782ec0653386b4a0c46bef3c"
+    },
+    {
+      "name": "0448",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f1829d1355ad82ea6f156464dc925ff06d3e27550c67d653a9b554f98ceabc27"
+    },
+    {
+      "name": "0449",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f1829d1355ad82ea6f156464dc925ff06d3e27550c67d653a9b554f98ceabc27"
+    },
+    {
+      "name": "0450",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "81524bbe7ee59e78c5424a62219aca4b7abd85bb9bd4f43c5035eb1c45482f82"
+    },
+    {
+      "name": "0451",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f6cf70605714bf9099065ba44428f7a67d7d4a9929e4f25606e175ede9ee9442"
+    },
+    {
+      "name": "0452",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ca90d3685fbe8bf158015018b49db144e2694f3206ca47a750a516bba32b7529"
+    },
+    {
+      "name": "0453",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "17a591d5b59294e98835c96023a8008917eb2c9b03c5f8f6c221a27b122225cd"
+    },
+    {
+      "name": "0454",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "ac280373447f0aa86caf4c9734cc4d09f43b755884e383c236a2c244ac6f3527"
+    },
+    {
+      "name": "0455",
+      "w": 64,
+      "h": 64,
+      "id": 1,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1c7d76beb61be0516170bcd6d969e7e69b1e3ff8c8a421a41aa218fdab6bfd18"
+    },
+    {
+      "name": "0456",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "6692e75f08e87b107c01ee250514bd038e3a0e01bb514ad8660df08f4ce92b6e"
+    },
+    {
+      "name": "0457",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "a0102e7ea3888955a80d58ce3d948c2bfa44e8a96266dc0ff39d7ddfdc3cb625"
+    },
+    {
+      "name": "0458",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "642987c18e91c0c90eaa168dd0531672b20c9b542f3bd6664152672ee67397e4"
+    },
+    {
+      "name": "0459",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0460",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "62fb561c59d0cea247fc588f3311ee665375f35d8675b186e2792cb7dfcff88c"
+    },
+    {
+      "name": "0461",
+      "w": 64,
+      "h": 64,
+      "id": 2,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "c14407c0ae0319898810aef6b802a69340132e3a14f23136598af72a5aff0401"
+    },
+    {
+      "name": "0462",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "3e7096dd683ca21db11da826b453725888ad3f0ddaeef6d8f6eb5cf08de75aa7"
+    },
+    {
+      "name": "0463",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f248a6bfdd740dce75894f1570eb68c8245c03f8fc577762a402f16dbe391698"
+    },
+    {
+      "name": "0464",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "3cfdbf17c0ac870cb2cce4a3d1e343b980b7522581aa7ef6fbb9f49d4c54f4f0"
+    },
+    {
+      "name": "0465",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "73d131ecf4cf0f2343ec4a7339926be499940910b22367605e2f78c82e0cb16f"
+    },
+    {
+      "name": "0466",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "f9ce2428702336c1c91be783037c75ce151f1cb8a2aa9bca238c0626bd84469a"
+    },
+    {
+      "name": "0467",
+      "w": 64,
+      "h": 64,
+      "id": 8,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "81111b2f8875b5888a5804ee82fabc67761c459eee9bffddf2588185e6fa5226"
+    },
+    {
+      "name": "0468",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "247f76e79f019a03c4f18a377c09ff700e6dfab4b6e1e455ffe39c199b73aecb"
+    },
+    {
+      "name": "0469",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "1e4a6c483fa9b41205a1e4d6f548b25dd36872baca6aa3bd5724a0d817785ed8"
+    },
+    {
+      "name": "0470",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 0,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "119d4ff4bfd87c51c289b4f28aa867b76f68708e04c4fdc5c7a3280fb542426b"
+    },
+    {
+      "name": "0471",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 77,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "e589dbe80c199bf67bdb27ca329e0de03c940bc3fe7b3e1bd0d1ab80fd220db5"
+    },
+    {
+      "name": "0472",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 128,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "635fd6fcf03f30a24ef4197256ba4965236c623da79cefff573ca6c6b29a7da1"
+    },
+    {
+      "name": "0473",
+      "w": 64,
+      "h": 64,
+      "id": 15,
+      "threshold": 201,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "10f57d5d16a96edf12e9148e6def26b43678fa55a3fef4bc61be3e7c55e7bc72"
+    },
+    {
+      "name": "0474",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "a117363e913068ddf73c899dfc9b09fe1fecc24bc86c7834ffe4fe8c76867e23"
+    },
+    {
+      "name": "0475",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 0,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "none",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "cfdef3d9473cbfeee3674812fa23e421bda118309a6194f4771feafebcdbd696"
+    },
+    {
+      "name": "0476",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 77,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "31e5b9feaddbed267732d5f5abbc33212261367fbdadb54ffa9fbb62a19dcb66"
+    },
+    {
+      "name": "0477",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 128,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "gb",
+      "tone": {
+        "contrast": 25,
+        "midtones": 1.2,
+        "highlights": 35
+      },
+      "sha256": "9efbfe77d57a332b42e08af104b279a13a1680935dbfdce53458c0d8e79ff9a2"
+    },
+    {
+      "name": "0478",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 201,
+      "serpentine": true,
+      "invert": false,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "be8a7e065d5ad42739661086e41bdc89d236c1405086ef392469aaabdf746b90"
+    },
+    {
+      "name": "0479",
+      "w": 64,
+      "h": 64,
+      "id": 17,
+      "threshold": 255,
+      "serpentine": false,
+      "invert": true,
+      "paletteId": "pico8",
+      "tone": {
+        "contrast": 0,
+        "midtones": 1,
+        "highlights": 0
+      },
+      "sha256": "69aaa8de311b86029e4e0a32e441e0add09967d6fecdc6e75d90d8549d0063f1"
+    }
+  ]
+}

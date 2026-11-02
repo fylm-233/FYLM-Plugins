@@ -1,0 +1,46 @@
+{
+  "origin": "FYLM original procedural diagnostic artwork",
+  "width": 768,
+  "height": 512,
+  "scenes": [
+    "portrait",
+    "landscape",
+    "interior",
+    "mechanical"
+  ],
+  "details": {
+    "eyes": [
+      [
+        141,
+        128,
+        28,
+        23
+      ],
+      [
+        212,
+        128,
+        28,
+        23
+      ]
+    ],
+    "hair": [
+      102,
+      30,
+      180,
+      60
+    ],
+    "highlights": [
+      626,
+      349,
+      53,
+      57
+    ],
+    "thin_lines": [
+      28,
+      281,
+      132,
+      120
+    ]
+  },
+  "status": "diagnostic thumbnails; subjective visual acceptance pending"
+}

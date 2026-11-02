@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "Two-Tone Chronicle / 青绿双色",
+  "encoding": "srgb",
+  "preset_id": "PA12",
+  "palette_id": "FYLM.PA12.B.v1",
+  "content_sha256": "6d1df43513a849f83cd2401ed352aa2584a1967c8d5883da2b99cf9fc89fb455",
+  "color_origin": "original-authored-ramps; not official or directly extracted game palettes",
+  "colors": [
+    "#132B29",
+    "#A8C99C"
+  ]
+}

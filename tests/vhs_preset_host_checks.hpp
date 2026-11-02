@@ -1,0 +1,23 @@
+#ifdef FYLM_CRT_ONLY
+static int vhsTestKeys=-1,vhsTestExpr=-1,vhsTestLeases=0;
+static bool vhsTestEnabled=false,vhsTestFailure=false;
+void vhsHostPresets(Host& h,PF_InData& in,PF_OutData& out){
+ PF_ParamUtilsSuite3 keys{};keys.PF_GetKeyframeCount=[](PF_ProgPtr,PF_ParamIndex index,PF_KeyIndex* count)->PF_Err{*count=index==vhsTestKeys?1:0;return 0;};keys.PF_UpdateParamUI=[](PF_ProgPtr,PF_ParamIndex,const PF_ParamDef*)->PF_Err{return 0;};
+ AEGP_UtilitySuite6 utility{};utility.AEGP_RegisterWithAEGP=[](AEGP_GlobalRefcon,const A_char*,AEGP_PluginID* id)->A_Err{*id=19;return 0;};
+ AEGP_PFInterfaceSuite1 bridge{};bridge.AEGP_GetNewEffectForEffect=[](AEGP_PluginID,PF_ProgPtr effect,AEGP_EffectRefH* handle)->A_Err{*handle=reinterpret_cast<AEGP_EffectRefH>(effect);return 0;};
+ AEGP_EffectSuite4 effects{};effects.AEGP_DisposeEffect=[](AEGP_EffectRefH)->A_Err{return 0;};
+ AEGP_StreamSuite5 streams{};streams.AEGP_GetNewEffectStreamByIndex=[](AEGP_PluginID,AEGP_EffectRefH,PF_ParamIndex index,AEGP_StreamRefH* stream)->A_Err{*stream=reinterpret_cast<AEGP_StreamRefH>(std::uintptr_t(index));return 0;};streams.AEGP_DisposeStream=[](AEGP_StreamRefH)->A_Err{return 0;};
+ streams.AEGP_GetExpressionState=[](AEGP_PluginID,AEGP_StreamRefH stream,A_Boolean* enabled)->A_Err{*enabled=int(reinterpret_cast<std::uintptr_t>(stream))==vhsTestExpr&&vhsTestEnabled;return 0;};
+ streams.AEGP_GetExpression=[](AEGP_PluginID,AEGP_StreamRefH stream,AEGP_MemHandle* text)->A_Err{*text=nullptr;if(int(reinterpret_cast<std::uintptr_t>(stream))==vhsTestExpr)*text=reinterpret_cast<AEGP_MemHandle>(new A_UTF16Char[2]{65,0});return 0;};
+ AEGP_MemorySuite1 memory{};memory.AEGP_LockMemHandle=[](AEGP_MemHandle handle,void** data)->A_Err{*data=reinterpret_cast<void*>(handle);return 0;};memory.AEGP_UnlockMemHandle=[](AEGP_MemHandle)->A_Err{return 0;};memory.AEGP_FreeMemHandle=[](AEGP_MemHandle handle)->A_Err{delete[] reinterpret_cast<A_UTF16Char*>(handle);return 0;};
+ struct Suites{const void* keys;const void* utility;const void* bridge;const void* effects;const void* streams;const void* memory;};static Suites suites;suites={&keys,&utility,&bridge,&effects,&streams,&memory};
+ SPBasicSuite basic{};basic.AcquireSuite=[](const char* name,int32,const void** suite)->SPErr{*suite=nullptr;if(std::strcmp(name,kPFParamUtilsSuite)==0)*suite=suites.keys;else if(std::strcmp(name,kAEGPUtilitySuite)==0)*suite=suites.utility;else if(std::strcmp(name,kAEGPPFInterfaceSuite)==0)*suite=suites.bridge;else if(std::strcmp(name,kAEGPEffectSuite)==0)*suite=suites.effects;else if(std::strcmp(name,kAEGPStreamSuite)==0&&!vhsTestFailure)*suite=suites.streams;else if(std::strcmp(name,kAEGPMemorySuite)==0)*suite=suites.memory;if(!*suite)return -1;vhsTestLeases++;return 0;};basic.ReleaseSuite=[](const char*,int32)->SPErr{vhsTestLeases--;return 0;};
+
+ auto prior=in.pica_basicP;in.pica_basicP=&basic;PF_ParamDef* params[fylm::Count];for(int i=0;i<fylm::Count;i++)params[i]=&h.p[i];PF_UserChangedParamExtra event{};event.param_index=45;
+ h.p[25].u.pd.value=3;h.p[2].u.bd.value=1;h.p[3].u.bd.value=1;h.p[4].u.fs_d.value=.37;h.p[42].u.sd.value=19;h.p[14].u.bd.value=0;
+ for(int choice=2;choice<=9;choice++){h.p[44].u.pd.value=choice;require(EffectMain(PF_Cmd_USER_CHANGED_PARAM,&in,&out,params,nullptr,&event)==0,"native VHS preset apply");require(h.p[25].u.pd.value==3&&h.p[2].u.bd.value&&h.p[3].u.bd.value&&h.p[4].u.fs_d.value==.37&&h.p[42].u.sd.value==19&&!h.p[14].u.bd.value,"VHS preset changed mode, CRT, clock or seed");for(auto& [key,value]:fylm::crt::vhsPreset(choice).settings){int i=fylm::index(key.c_str());double actual=fylm::Params[i-1].kind==fylm::Kind::Popup?h.p[i].u.pd.value:h.p[i].u.fs_d.value;require(std::abs(actual-value)<1e-6,"VHS recipe mapping");}require(vhsTestLeases==0,"VHS host suite leak");}
+ for(int scenario=0;scenario<4;scenario++){h.p[44].u.pd.value=2;h.p[10].u.fs_d.value=77;h.p[39].u.pd.value=1;vhsTestKeys=scenario==0?10:-1;vhsTestExpr=scenario==1||scenario==2?10:-1;vhsTestEnabled=scenario==1;vhsTestFailure=scenario==3;require(EffectMain(PF_Cmd_USER_CHANGED_PARAM,&in,&out,params,nullptr,&event)!=0&&h.p[10].u.fs_d.value==77&&h.p[39].u.pd.value==1&&vhsTestLeases==0,"VHS preset guard not atomic");}
+ vhsTestKeys=vhsTestExpr=-1;vhsTestEnabled=vhsTestFailure=false;h.p[25].u.pd.value=1;require(EffectMain(PF_Cmd_USER_CHANGED_PARAM,&in,&out,params,nullptr,&event)!=0,"VHS preset accepted in CRT-only");h.p[25].u.pd.value=3;h.p[2].u.bd.value=0;require(EffectMain(PF_Cmd_USER_CHANGED_PARAM,&in,&out,params,nullptr,&event)!=0,"VHS preset enables disabled VHS");h.p[2].u.bd.value=1;h.p[14].u.bd.value=1;h.p[39].u.pd.value=1;h.p[40].u.fs_d.value=h.p[41].u.fs_d.value=0;h.p[42].u.sd.value=0;h.p[43].u.fs_d.value=100;in.pica_basicP=prior;
+
+}
+#endif

@@ -1,0 +1,2468 @@
+{
+  "schema_version": 1,
+  "id": "FYLM.SG.Library.v1",
+  "revision": 6,
+  "entries": [
+    {
+      "id": "FYLM.SG.crt-geom",
+      "slug": "crt-geom",
+      "base": "crt-geom",
+      "category": "CRT",
+      "name": "CRT Geom",
+      "zh": "弧面彩管（Geom）",
+      "ja": "CRT Geom",
+      "virtual_height": 240,
+      "slots": [
+        "DOTMASK",
+        "scanline_weight",
+        "SHARPER",
+        "CURVATURE",
+        "R",
+        "CRTgamma",
+        "monitorgamma",
+        "lum"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "曲面、扫描线和屏幕边角；适合带背景的画面。",
+      "source": {
+        "repository": "libretro/slang-shaders via ShaderGlass",
+        "path": "crt/crt-geom.slangp"
+      },
+      "sha256": "efeac7f4b48b62b91077e5984058a37f036718c8db937900e9268765fdac6e87",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 1,
+      "display_slots": [
+        "CRTgamma",
+        "monitorgamma",
+        "d",
+        "CURVATURE",
+        "invert_aspect",
+        "R",
+        "cornersize",
+        "cornersmooth"
+      ],
+      "zh_hant": "弧面彩管（Geom）",
+      "use_hant": "曲面、掃描線和屏幕邊角；適合帶背景的畫面。"
+    },
+    {
+      "id": "FYLM.SG.crt-easymode",
+      "slug": "crt-easymode",
+      "base": "crt-easymode",
+      "category": "CRT",
+      "name": "CRT EasyMode",
+      "zh": "柔和扫描屏（EasyMode）",
+      "ja": "CRT EasyMode",
+      "virtual_height": 240,
+      "slots": [
+        "MASK_STRENGTH",
+        "SCANLINE_STRENGTH",
+        "SHARPNESS_H",
+        "SHARPNESS_V",
+        "BRIGHT_BOOST",
+        "GAMMA_INPUT",
+        "GAMMA_OUTPUT",
+        "DILATION"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "柔和扫描线与彩色栅格，适合人物和动画。",
+      "source": {
+        "repository": "libretro/slang-shaders via ShaderGlass",
+        "path": "crt/crt-easymode.slangp"
+      },
+      "sha256": "509e30339a1ca17ce57177df9c87e76348783453648a5dbb13a3b38fc9c9b9b8",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 2,
+      "display_slots": [
+        "SHARPNESS_H",
+        "SHARPNESS_V",
+        "MASK_STRENGTH",
+        "MASK_DOT_WIDTH",
+        "MASK_DOT_HEIGHT",
+        "MASK_STAGGER",
+        "MASK_SIZE",
+        "SCANLINE_STRENGTH"
+      ],
+      "zh_hant": "柔和掃描屏（EasyMode）",
+      "use_hant": "柔和掃描線與彩色柵格，適合人物和動畫。"
+    },
+    {
+      "id": "FYLM.SG.Imported",
+      "menu": 3,
+      "slug": "imported",
+      "category": "Imported",
+      "name": "Imported Preset",
+      "zh": "已导入预设",
+      "ja": "読み込みプリセット",
+      "performance": "multi-pass",
+      "zh_hant": "已導入預設"
+    },
+    {
+      "id": "FYLM.SG.Art.SG01",
+      "slug": "sg01",
+      "base": "crt-easymode",
+      "category": "Art",
+      "name": "SG01 Clear Soft Grille",
+      "zh": "SG01 清透柔栅",
+      "ja": "SG01 Clear Soft Grille",
+      "virtual_height": 720,
+      "slots": [
+        "MASK_STRENGTH",
+        "SCANLINE_STRENGTH",
+        "SHARPNESS_H",
+        "SHARPNESS_V",
+        "BRIGHT_BOOST",
+        "GAMMA_INPUT",
+        "GAMMA_OUTPUT",
+        "DILATION"
+      ],
+      "overrides": {
+        "MASK_STRENGTH": 0.08,
+        "SCANLINE_STRENGTH": 0.28,
+        "BRIGHT_BOOST": 1.03,
+        "SHARPNESS_H": 0.6,
+        "SHARPNESS_V": 0.8,
+        "GAMMA_INPUT": 2.2,
+        "GAMMA_OUTPUT": 2.2,
+        "DILATION": 0,
+        "SCANLINE_CUTOFF": 1000
+      },
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "日光立绘与浅色服饰；低强度栅格、平直画幅",
+      "source": {
+        "repository": "libretro/slang-shaders via ShaderGlass",
+        "path": "crt/crt-easymode.slangp"
+      },
+      "sha256": "509e30339a1ca17ce57177df9c87e76348783453648a5dbb13a3b38fc9c9b9b8",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "origin": "FYLM original parameter recipe; algorithm attribution unchanged",
+      "menu": 4,
+      "zh_hant": "SG01 清透柔柵",
+      "use_hant": "日光立繪與淺色服飾；低強度柵格、平直畫幅"
+    },
+    {
+      "id": "FYLM.SG.Art.SG02",
+      "slug": "sg02",
+      "base": "crt-lottes",
+      "category": "Art",
+      "name": "SG02 Gentle Phosphor",
+      "zh": "SG02 柔光荧屏",
+      "ja": "SG02 Gentle Phosphor",
+      "virtual_height": 480,
+      "slots": [
+        "hardScan",
+        "hardPix",
+        "maskDark",
+        "maskLight",
+        "bloomAmount",
+        "brightBoost",
+        "warpX",
+        "warpY"
+      ],
+      "overrides": {
+        "hardScan": -4,
+        "hardPix": -2.5,
+        "warpX": 0,
+        "warpY": 0,
+        "maskDark": 0.92,
+        "maskLight": 1.04,
+        "shadowMask": 3,
+        "brightBoost": 0.94,
+        "bloomAmount": 0.015,
+        "shape": 2
+      },
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "人物近景与低饱和插画；弱荧光扩散、轻扫描线",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "crt/crt-lottes.slangp",
+        "files": [
+          {
+            "path": "crt/crt-lottes.slangp",
+            "bytes": 94,
+            "sha256": "51bdf93aa6e3dd8605bf1c2b19af1f511672b53f3551d8de1041e02a7bbf9610",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-lottes.slang",
+            "bytes": 9540,
+            "sha256": "e382eec413c2acf5d03cce65d447347553032acf2e550826d0142a9c51d559ef",
+            "license_evidence": "Public-domain-declaration",
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "b4152549d8f744c2caa72c8a31dfb2125bc59791c59808c23ef1674c17119143",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "origin": "FYLM original parameter recipe; algorithm attribution unchanged",
+      "menu": 5,
+      "zh_hant": "SG02 柔光熒屏",
+      "use_hant": "人物近景與低飽和插畫；弱熒光擴散、輕掃描線"
+    },
+    {
+      "id": "FYLM.SG.Art.SG03",
+      "slug": "sg03",
+      "base": "crt-aperture",
+      "category": "Art",
+      "name": "SG03 Fine Portrait Grille",
+      "zh": "SG03 细栅肖像",
+      "ja": "SG03 Fine Portrait Grille",
+      "virtual_height": 720,
+      "slots": [
+        "MASK_STRENGTH",
+        "GLOW_HALATION",
+        "GLOW_DIFFUSION",
+        "BRIGHTNESS",
+        "SHARPNESS_IMAGE",
+        "SHARPNESS_EDGES",
+        "SCANLINE_SIZE_MIN",
+        "SCANLINE_SIZE_MAX"
+      ],
+      "overrides": {
+        "MASK_STRENGTH": 0.08,
+        "BRIGHTNESS": 1.85,
+        "GLOW_HALATION": 0.035,
+        "GLOW_DIFFUSION": 0.02,
+        "SCANLINE_SIZE_MIN": 1.2,
+        "SCANLINE_SIZE_MAX": 1.5,
+        "GAMMA_INPUT": 2.2,
+        "GAMMA_OUTPUT": 2.2
+      },
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "发丝与眼部细节较多的立绘；细栅格和低光晕",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "crt/crt-aperture.slangp",
+        "files": [
+          {
+            "path": "crt/crt-aperture.slangp",
+            "bytes": 96,
+            "sha256": "71ea5ae6ca681ac45e74bb1af694d72a5bebf80a272b0766a2e7f1f62d78cc06",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-aperture.slang",
+            "bytes": 5566,
+            "sha256": "2cbadf75f1dfc4741504c2fbcd323c5c77d663500de92ea1c43ad21fd8202a69",
+            "license_evidence": null,
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "f766822c7c7942ee20400048b75ed48aa686d2a65ddb1cc3a77bdca266c11580",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "origin": "FYLM original parameter recipe; algorithm attribution unchanged",
+      "menu": 6,
+      "mix": 0.55,
+      "zh_hant": "SG03 細柵肖像",
+      "use_hant": "發絲與眼部細節較多的立繪；細柵格和低光暈"
+    },
+    {
+      "id": "FYLM.SG.Art.SG04",
+      "slug": "sg04",
+      "base": "crt-geom",
+      "category": "Art",
+      "name": "SG04 Soft Curved Display",
+      "zh": "SG04 轻弧映像",
+      "ja": "SG04 Soft Curved Display",
+      "virtual_height": 720,
+      "slots": [
+        "DOTMASK",
+        "scanline_weight",
+        "SHARPER",
+        "CURVATURE",
+        "R",
+        "CRTgamma",
+        "monitorgamma",
+        "lum"
+      ],
+      "overrides": {
+        "CURVATURE": 1,
+        "R": 6,
+        "cornersize": 0.008,
+        "DOTMASK": 0.06,
+        "scanline_weight": 0.42,
+        "CRTgamma": 2.2,
+        "monitorgamma": 2.2,
+        "interlace_detect": 0,
+        "SHARPER": 1.4
+      },
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "带背景的角色展示；轻曲面与柔和边缘，透明立绘需检查边缘",
+      "source": {
+        "repository": "libretro/slang-shaders via ShaderGlass",
+        "path": "crt/crt-geom.slangp"
+      },
+      "sha256": "efeac7f4b48b62b91077e5984058a37f036718c8db937900e9268765fdac6e87",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "origin": "FYLM original parameter recipe; algorithm attribution unchanged",
+      "menu": 7,
+      "zh_hant": "SG04 輕弧映像",
+      "use_hant": "帶背景的角色展示；輕曲面與柔和邊緣，透明立繪需檢查邊緣"
+    },
+    {
+      "id": "FYLM.SG.crt-lottes",
+      "slug": "crt-lottes",
+      "base": "crt-lottes",
+      "category": "CRT",
+      "name": "crt lottes",
+      "zh": "经典彩管（Lottes）",
+      "ja": "crt lottes",
+      "virtual_height": 240,
+      "slots": [
+        "hardScan",
+        "hardPix",
+        "maskDark",
+        "maskLight",
+        "bloomAmount",
+        "brightBoost",
+        "warpX",
+        "warpY"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "典型彩色显像管，扫描线与轻荧光扩散。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "crt/crt-lottes.slangp",
+        "files": [
+          {
+            "path": "crt/crt-lottes.slangp",
+            "bytes": 94,
+            "sha256": "51bdf93aa6e3dd8605bf1c2b19af1f511672b53f3551d8de1041e02a7bbf9610",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-lottes.slang",
+            "bytes": 9540,
+            "sha256": "e382eec413c2acf5d03cce65d447347553032acf2e550826d0142a9c51d559ef",
+            "license_evidence": "Public-domain-declaration",
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "b4152549d8f744c2caa72c8a31dfb2125bc59791c59808c23ef1674c17119143",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 8,
+      "zh_hant": "經典彩管（Lottes）",
+      "use_hant": "典型彩色顯像管，掃描線與輕熒光擴散。"
+    },
+    {
+      "id": "FYLM.SG.crt-lottes-fast",
+      "slug": "crt-lottes-fast",
+      "base": "crt-lottes-fast",
+      "category": "CRT",
+      "name": "crt lottes fast",
+      "zh": "轻量彩管（Lottes Fast）",
+      "ja": "crt lottes fast",
+      "virtual_height": 240,
+      "slots": [
+        "MASK_INTENSITY",
+        "SCANLINE_THINNESS",
+        "SCAN_BLUR",
+        "CURVATURE",
+        "CORNER",
+        "CRT_GAMMA",
+        "MASK",
+        "TRINITRON_CURVE"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "较少处理步骤的彩管外观，可调弯曲与栅格。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "crt/crt-lottes-fast.slangp",
+        "files": [
+          {
+            "path": "crt/crt-lottes-fast.slangp",
+            "bytes": 98,
+            "sha256": "0992238001c519503d9e8e750b37b32d30ff380e74a40287863605ae69f9fff0",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-lottes-fast.slang",
+            "bytes": 24568,
+            "sha256": "576eddc662ac4f77909c0c14dbd5a16ac4164e50c67527fff634316f4441c482",
+            "license_evidence": "Public-domain-declaration",
+            "authors": [
+              "// In jurisdictions that recognize copyright laws, the author or",
+              "// authors of this software dedicate any and all copyright ",
+              "// copyright law."
+            ]
+          }
+        ]
+      },
+      "sha256": "c17967d770a7041a5400b91e5f1f51d2e1acb3f7c6959100c38f485aee8bc9e4",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 9,
+      "zh_hant": "輕量彩管（Lottes Fast）",
+      "use_hant": "較少處理步驟的彩管外觀，可調彎曲與柵格。"
+    },
+    {
+      "id": "FYLM.SG.crt-aperture",
+      "slug": "crt-aperture",
+      "base": "crt-aperture",
+      "category": "CRT",
+      "name": "crt aperture",
+      "zh": "细栅彩管（Aperture）",
+      "ja": "crt aperture",
+      "virtual_height": 240,
+      "slots": [
+        "MASK_STRENGTH",
+        "GLOW_HALATION",
+        "GLOW_DIFFUSION",
+        "BRIGHTNESS",
+        "SHARPNESS_IMAGE",
+        "SHARPNESS_EDGES",
+        "SCANLINE_SIZE_MIN",
+        "SCANLINE_SIZE_MAX"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "细彩色栅格和光晕，适合较清晰的显示外观。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "crt/crt-aperture.slangp",
+        "files": [
+          {
+            "path": "crt/crt-aperture.slangp",
+            "bytes": 96,
+            "sha256": "71ea5ae6ca681ac45e74bb1af694d72a5bebf80a272b0766a2e7f1f62d78cc06",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-aperture.slang",
+            "bytes": 5566,
+            "sha256": "2cbadf75f1dfc4741504c2fbcd323c5c77d663500de92ea1c43ad21fd8202a69",
+            "license_evidence": null,
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "f766822c7c7942ee20400048b75ed48aa686d2a65ddb1cc3a77bdca266c11580",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 10,
+      "zh_hant": "細柵彩管（Aperture）",
+      "use_hant": "細彩色柵格和光暈，適合較清晰的顯示外觀。"
+    },
+    {
+      "id": "FYLM.SG.crt-pi",
+      "slug": "crt-pi",
+      "base": "crt-pi",
+      "category": "CRT",
+      "name": "crt pi",
+      "zh": "柔亮彩管（Pi）",
+      "ja": "crt pi",
+      "virtual_height": 240,
+      "slots": [
+        "SCANLINE_WEIGHT",
+        "SCANLINE_GAP_BRIGHTNESS",
+        "MASK_BRIGHTNESS",
+        "BLOOM_FACTOR",
+        "CURVATURE_X",
+        "CURVATURE_Y",
+        "INPUT_GAMMA",
+        "OUTPUT_GAMMA"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "较柔和的扫描线、亮度与光晕。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "crt/crt-pi.slangp",
+        "files": [
+          {
+            "path": "crt/crt-pi.slangp",
+            "bytes": 89,
+            "sha256": "2ca7e2d35c6ac55291409636931cf178315c8c1131710a28c62121babc46d19b",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-pi.slang",
+            "bytes": 7523,
+            "sha256": "d62b27e46b22aa0f0a9703ade862f558b7ca08b69f4a2032bbc9d244077642b5",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "    Copyright (C) 2015-2016 davej"
+            ]
+          }
+        ]
+      },
+      "sha256": "3feb2dfd217d2b1db98250bb19deca18277f6c99c46ea1f240bb2834155ac4d9",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 11,
+      "zh_hant": "柔亮彩管（Pi）",
+      "use_hant": "較柔和的掃描線、亮度與光暈。"
+    },
+    {
+      "id": "FYLM.SG.zfast-crt",
+      "slug": "zfast-crt",
+      "base": "zfast-crt",
+      "category": "CRT",
+      "name": "zfast crt",
+      "zh": "快速扫描屏（Zfast）",
+      "ja": "zfast crt",
+      "virtual_height": 240,
+      "slots": [
+        "BLURSCALEX",
+        "LOWLUMSCAN",
+        "HILUMSCAN",
+        "BRIGHTBOOST",
+        "MASK_DARK",
+        "MASK_FADE"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "轻量扫描线外观，可控制暗部和亮部线条。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "crt/zfast-crt.slangp",
+        "files": [
+          {
+            "path": "crt/zfast-crt.slangp",
+            "bytes": 116,
+            "sha256": "fa3a7f37344f351572e692bc317a21f89f30628c08c09adc1091e4900f1f8e11",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/zfast_crt/zfast_crt_finemask.slang",
+            "bytes": 218,
+            "sha256": "0214419beed4c08d991288e90f8a73700fd7da567a454ad2ffe725b3b6eea366",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/zfast_crt/zfast_crt_impl.inc",
+            "bytes": 3659,
+            "sha256": "e1006274577b85f18ed793856b46f92d5cd6f6207a98af398004644006907bf1",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "    Copyright (C) 2017 Greg Hogan (SoltanGris42)"
+            ]
+          }
+        ]
+      },
+      "sha256": "565f0108e6dd8b10a117f999e2f01926c12c1b05b86081ddb035697ed0aaa7fa",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 12,
+      "zh_hant": "快速掃描屏（Zfast）",
+      "use_hant": "輕量掃描線外觀，可控制暗部和亮部線條。"
+    },
+    {
+      "id": "FYLM.SG.crt-caligari",
+      "slug": "crt-caligari",
+      "base": "crt-caligari",
+      "category": "CRT",
+      "name": "crt caligari",
+      "zh": "柔焦荧屏（Caligari）",
+      "ja": "crt caligari",
+      "virtual_height": 240,
+      "slots": [
+        "SPOT_WIDTH",
+        "SPOT_HEIGHT",
+        "COLOR_BOOST",
+        "InputGamma",
+        "OutputGamma"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "较柔软的荧光点与色彩增强。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "crt/crt-caligari.slangp",
+        "files": [
+          {
+            "path": "crt/crt-caligari.slangp",
+            "bytes": 96,
+            "sha256": "f25678e34331f2ef3b09888bdcefeb2d4db9a9520b5df46f4c3d1b74538d5b18",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-caligari.slang",
+            "bytes": 4362,
+            "sha256": "771aa239edc54483792c78dd07c0cc7f9a31ee7d31af1c7b70ba02be04c190e3",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "    Phosphor shader - Copyright (C) 2011 caligari."
+            ]
+          }
+        ]
+      },
+      "sha256": "7be349dec7e1da7618c8265265069d2e5ed92b546ffd9942c1f1a600518f4a25",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 13,
+      "zh_hant": "柔焦熒屏（Caligari）",
+      "use_hant": "較柔軟的熒光點與色彩增強。"
+    },
+    {
+      "id": "FYLM.SG.crt-geom-mini",
+      "slug": "crt-geom-mini",
+      "base": "crt-geom-mini",
+      "category": "CRT",
+      "name": "crt geom mini",
+      "zh": "轻弧彩管（Geom Mini）",
+      "ja": "crt geom mini",
+      "virtual_height": 240,
+      "slots": [
+        "CURV",
+        "scanlines",
+        "MASK",
+        "INTERL",
+        "SAT"
+      ],
+      "overrides": {},
+      "passes": 2,
+      "performance": "multi-pass",
+      "use": "简化的曲面彩管，可调饱和度与扫描线。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "crt/crt-geom-mini.slangp",
+        "files": [
+          {
+            "path": "crt/crt-geom-mini.slangp",
+            "bytes": 142,
+            "sha256": "3824ab8f66c9ea571d03f962278f656ea177915834a05efb24fbbcbeadd1624f",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-consumer/linearize.slang",
+            "bytes": 687,
+            "sha256": "f5913d0cccc5706d92bca3e2ce83ae478b99681ff026b3e4497a386ce4d2c70e",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-geom-mini.slang",
+            "bytes": 3915,
+            "sha256": "084f7d7fb663db1bf55ea5625d979d6b2f0dc7f7277c7332b6e8c0caf2375d83",
+            "license_evidence": "GPL-family",
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "259feaf440b6523edd2a2571869139443b8c2b77dd578e33abc019e2d4e28bd6",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 14,
+      "zh_hant": "輕弧彩管（Geom Mini）",
+      "use_hant": "簡化的曲面彩管，可調飽和度與掃描線。"
+    },
+    {
+      "id": "FYLM.SG.lcd-grid-v2",
+      "slug": "lcd-grid-v2",
+      "base": "lcd-grid-v2",
+      "category": "LCD",
+      "name": "lcd grid v2",
+      "zh": "液晶像素网格",
+      "ja": "lcd grid v2",
+      "virtual_height": 240,
+      "slots": [
+        "gain",
+        "gamma",
+        "blacklevel",
+        "ambient",
+        "BGR",
+        "RSUBPIX_R",
+        "GSUBPIX_G",
+        "BSUBPIX_B"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "模拟液晶屏的红绿蓝亮点排列。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "handheld/lcd-grid-v2.slangp",
+        "files": [
+          {
+            "path": "handheld/lcd-grid-v2.slangp",
+            "bytes": 567,
+            "sha256": "a643c521fc44fadaff27658ee980ffc3df0703265d812da70de5fb3ee42abf1d",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "handheld/shaders/lcd-cgwg/lcd-grid-v2.slang",
+            "bytes": 4696,
+            "sha256": "dc77b29530e5b771f12a5a2dd68c390805139bc25d84a30dead021fd38e581c5",
+            "license_evidence": null,
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "0dfe3e3efa75e3e1194f8a51e4b18b2da12ca148bf9d7b09ee91ff19d84e2de4",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 15,
+      "zh_hant": "液晶像素網格",
+      "use_hant": "模擬液晶屏的紅綠藍亮點排列。"
+    },
+    {
+      "id": "FYLM.SG.dot",
+      "slug": "dot",
+      "base": "dot",
+      "category": "LCD",
+      "name": "dot",
+      "zh": "点阵掌机屏",
+      "ja": "dot",
+      "virtual_height": 240,
+      "slots": [
+        "gamma",
+        "shine",
+        "blend",
+        "soft"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "点阵屏纹理，可调亮点反光与柔化。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "handheld/dot.slangp",
+        "files": [
+          {
+            "path": "handheld/dot.slangp",
+            "bytes": 92,
+            "sha256": "97ba13ac0676e7b07f1c6090897962279c1ecbca84c645ea0a920638eab34873",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "handheld/shaders/dot.slang",
+            "bytes": 3306,
+            "sha256": "19e01f9d346042fa0363cf72b890de3ec088c374ab6ea5f4f2408dd146f1e415",
+            "license_evidence": "Public-domain-declaration",
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "3d7bbede9eac59805f680b871d55d6856e44fcc11a383a1c8021052e93781db7",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 16,
+      "zh_hant": "點陣掌機屏",
+      "use_hant": "點陣屏紋理，可調亮點反光與柔化。"
+    },
+    {
+      "id": "FYLM.SG.zfast-lcd",
+      "slug": "zfast-lcd",
+      "base": "zfast-lcd",
+      "category": "LCD",
+      "name": "zfast lcd",
+      "zh": "轻量液晶屏",
+      "ja": "zfast lcd",
+      "virtual_height": 240,
+      "slots": [
+        "BORDERMULT",
+        "GBAGAMMA"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "简单的像素边框与掌机明暗响应。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "handheld/zfast-lcd.slangp",
+        "files": [
+          {
+            "path": "handheld/zfast-lcd.slangp",
+            "bytes": 92,
+            "sha256": "480eecec22dac09b947ca9822738100e6cb343436008d37759ea1f77a68c44eb",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "handheld/shaders/zfast_lcd.slang",
+            "bytes": 2523,
+            "sha256": "49d34a36c794d831fdf169b51ae4cd028a6bfc6e9e630b8ed6fe0a6905d5f917",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "    Copyright (C) 2017 Greg Hogan (SoltanGris42)"
+            ]
+          }
+        ]
+      },
+      "sha256": "f26b347e6a2b24a3a5e0af035633ba1d89146a1a4dbf0418e44cdec7c1c8044a",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 17,
+      "zh_hant": "輕量液晶屏",
+      "use_hant": "簡單的像素邊框與掌機明暗響應。"
+    },
+    {
+      "id": "FYLM.SG.agb001",
+      "slug": "agb001",
+      "base": "agb001",
+      "category": "LCD",
+      "name": "agb001",
+      "zh": "GBA 原版液晶",
+      "ja": "agb001",
+      "virtual_height": 240,
+      "slots": [],
+      "overrides": {},
+      "passes": 2,
+      "performance": "multi-pass",
+      "use": "模拟原版掌机屏的显示配色；没有独立参数槽。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "handheld/agb001.slangp",
+        "files": [
+          {
+            "path": "handheld/agb001.slangp",
+            "bytes": 177,
+            "sha256": "8701c0b7971d0b52ef9d45c3b1bf820e428fdffe1fd07874b9a6e1707038cda6",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "handheld/shaders/mgba/agb001.slang",
+            "bytes": 1502,
+            "sha256": "1d10e61c4468977bd7713e3bcd519e638fb5cabd55569ed3e209fefd320244fd",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "stock.slang",
+            "bytes": 665,
+            "sha256": "fa7d346e3706a351aa77dc8e77bd049b8bfde635baf4376fedcf81f38d9a4008",
+            "license_evidence": null,
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "12be3dd2e73f3888794cd85ad7e98302c1758c27dfd35c8512cdc2b14ea670d8",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 18,
+      "zh_hant": "GBA 原版液晶",
+      "use_hant": "模擬原版掌機屏的顯示配色；沒有獨立參數槽。"
+    },
+    {
+      "id": "FYLM.SG.ags001",
+      "slug": "ags001",
+      "base": "ags001",
+      "category": "LCD",
+      "name": "ags001",
+      "zh": "GBA 前光液晶",
+      "ja": "ags001",
+      "virtual_height": 240,
+      "slots": [
+        "reflectionBrightness",
+        "reflectionDistanceX",
+        "reflectionDistanceY",
+        "lightBrightness"
+      ],
+      "overrides": {},
+      "passes": 2,
+      "performance": "multi-pass",
+      "use": "模拟前光掌机屏，可调反射与照明。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "handheld/ags001.slangp",
+        "files": [
+          {
+            "path": "handheld/ags001.slangp",
+            "bytes": 194,
+            "sha256": "54f1d80d18de666650727b09632bddf545fe17e7df5524746f99c182421f4a80",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "handheld/shaders/mgba/ags001.slang",
+            "bytes": 1461,
+            "sha256": "db18287adad419a725b7ff5ed3284bda70f729e2d286cda3d2dd3634dac8464c",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "handheld/shaders/mgba/ags001-light.slang",
+            "bytes": 2144,
+            "sha256": "2a0869fa650cab7c5cc5778afb5cddd5e53e8943467e922ac08c1f04b0307e7f",
+            "license_evidence": null,
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "0571cdbb4960a2a9bc7061e066caf28139087b3f5e9a73d6266d3fa45902ee55",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 19,
+      "zh_hant": "GBA 前光液晶",
+      "use_hant": "模擬前光掌機屏，可調反射與照明。"
+    },
+    {
+      "id": "FYLM.SG.sharp-bilinear-simple",
+      "slug": "sharp-bilinear-simple",
+      "base": "sharp-bilinear-simple",
+      "category": "Scaling",
+      "name": "sharp bilinear simple",
+      "zh": "原尺寸重建：清晰简版",
+      "ja": "sharp bilinear simple",
+      "virtual_height": 0,
+      "slots": [],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "保留原输入尺寸的重建算法。输入输出比例为1时可能近似原图；普通图片请优先选SG09或设置较低输入网格。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "pixel-art-scaling/sharp-bilinear-simple.slangp",
+        "files": [
+          {
+            "path": "pixel-art-scaling/sharp-bilinear-simple.slangp",
+            "bytes": 106,
+            "sha256": "310b6193f770baef6a7485fbc7115b5bdf9e237203aaa1ebe39e154b6895a50d",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "pixel-art-scaling/shaders/sharp-bilinear-simple.slang",
+            "bytes": 1946,
+            "sha256": "936698d1995e01bfe83307c5226b695e8135205d97932ba1f533c130fb86da5e",
+            "license_evidence": "Public-domain-declaration",
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "4df7b8bffa5a26b8cd4f73e68df499479ad1c17c45a6ed4786e8f4ab1c38a0e0",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 20,
+      "zh_hant": "原尺寸重建：清晰簡版",
+      "use_hant": "保留原輸入尺寸的重建算法。輸入輸出比例為1時可能近似原圖；普通圖片請優先選SG09或設置較低輸入網格。"
+    },
+    {
+      "id": "FYLM.SG.sharp-bilinear",
+      "slug": "sharp-bilinear",
+      "base": "sharp-bilinear",
+      "category": "Scaling",
+      "name": "sharp bilinear",
+      "zh": "原尺寸重建：清晰可调",
+      "ja": "sharp bilinear",
+      "virtual_height": 0,
+      "slots": [
+        "SHARP_BILINEAR_PRE_SCALE",
+        "AUTO_PRESCALE"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "适合放大已有低分辨率像素画。原尺寸输入时可能无明显变化；普通图片请优先选SG10。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "pixel-art-scaling/sharp-bilinear.slangp",
+        "files": [
+          {
+            "path": "pixel-art-scaling/sharp-bilinear.slangp",
+            "bytes": 99,
+            "sha256": "059a79b17fe4635420f032cb8c1c42072bf7e9104052f3a6cce564cca17f9b5d",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "pixel-art-scaling/shaders/sharp-bilinear.slang",
+            "bytes": 1726,
+            "sha256": "89c30132f1530466676a3be76fcdc5af42f808cd56df6571ff65b64e7073ab7e",
+            "license_evidence": "Public-domain-declaration",
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "a3b8db312b8d9c08ae43a800480b4516c4f86fbf10e7b2af89fa02dcf45f6719",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 21,
+      "zh_hant": "原尺寸重建：清晰可調",
+      "use_hant": "適合放大已有低分辨率像素畫。原尺寸輸入時可能無明顯變化；普通圖片請優先選SG10。"
+    },
+    {
+      "id": "FYLM.SG.image-adjustment",
+      "slug": "image-adjustment",
+      "base": "image-adjustment",
+      "category": "Colour",
+      "name": "image adjustment",
+      "zh": "画面调色",
+      "ja": "image adjustment",
+      "virtual_height": 240,
+      "slots": [
+        "ia_saturation",
+        "ia_contrast",
+        "ia_luminance",
+        "ia_black_level",
+        "ia_bright_boost",
+        "ia_R",
+        "ia_G",
+        "ia_B"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "调节饱和度、对比度、亮度和RGB增益；默认设置可能接近原图。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "misc/image-adjustment.slangp",
+        "files": [
+          {
+            "path": "misc/image-adjustment.slangp",
+            "bytes": 75,
+            "sha256": "a9f88e91c9b8aae4255779cd10e804602a9631ebf0a6ef5654dc9c1c93abc8dc",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "misc/shaders/image-adjustment.slang",
+            "bytes": 5304,
+            "sha256": "e608b1dd71d660d2ce8a77ee3e3a62ad5047d50a75adc8db7b4a1b7c1be83e2d",
+            "license_evidence": "Public-domain-declaration",
+            "authors": []
+          },
+          {
+            "path": "include/colorspace-tools.h",
+            "bytes": 14606,
+            "sha256": "a8845b280869c495790cfc8e6a88d5eee2865f4c640c1b6e1e9792c61498e155",
+            "license_evidence": null,
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "0768ff06dcc8a0ee2829ff978d49b5d8eac42c4b6888f3a71844fd9fe6b33867",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 22,
+      "zh_hant": "畫面調色",
+      "use_hant": "調節飽和度、對比度、亮度和RGB增益；默認設置可能接近原圖。"
+    },
+    {
+      "id": "FYLM.SG.grade-no-LUT",
+      "slug": "grade-no-LUT",
+      "base": "grade-no-LUT",
+      "category": "Colour",
+      "name": "grade no LUT",
+      "zh": "模拟显示调色",
+      "ja": "grade no LUT",
+      "virtual_height": 240,
+      "slots": [
+        "g_lum",
+        "g_cntrst",
+        "g_mid",
+        "g_sat",
+        "g_vibr",
+        "wp_temperature",
+        "g_hue_degrees",
+        "g_vstr"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "模拟显示设备的色彩响应，可调色温、色相和中间调；默认可能接近原图。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "misc/grade-no-LUT.slangp",
+        "files": [
+          {
+            "path": "misc/grade-no-LUT.slangp",
+            "bytes": 73,
+            "sha256": "48a1f7ddd4479e7f37ac3fb3e95f9afe0ec191daaaa9a94090e2dec1c33e8227",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "misc/shaders/grade-no-LUT.slang",
+            "bytes": 35255,
+            "sha256": "3f0f0ce568638ced889a3a6173c628436b564c48845992d31bff2fc5ee9b9e09",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "   Copyright (C) 2020-2023 Dogway (Jose Linares)"
+            ]
+          }
+        ]
+      },
+      "sha256": "7ba358d0d34aae7685deb8ecacf71e65d05ad6b9273599dce3784763dfac1131",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 23,
+      "zh_hant": "模擬顯示調色",
+      "use_hant": "模擬顯示設備的色彩響應，可調色溫、色相和中間調；默認可能接近原圖。"
+    },
+    {
+      "id": "FYLM.SG.mudlord-pal-vhs",
+      "slug": "mudlord-pal-vhs",
+      "base": "mudlord-pal-vhs",
+      "category": "Signal",
+      "name": "mudlord pal vhs",
+      "zh": "PAL 磁带画面",
+      "ja": "mudlord pal vhs",
+      "virtual_height": 240,
+      "slots": [
+        "frameShape",
+        "frameLimit",
+        "frameSharpness",
+        "TVNoise",
+        "PALSignal",
+        "phosphors",
+        "border"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "带噪声、边框与荧光点的模拟信号外观。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "vhs/mudlord-pal-vhs.slangp",
+        "files": [
+          {
+            "path": "vhs/mudlord-pal-vhs.slangp",
+            "bytes": 76,
+            "sha256": "8af4cae8fe2764f0d1161396c422fc8d7d1dfbe58bd8a0676ae006322cbaeff7",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "vhs/shaders/mudlord-pal-vhs.slang",
+            "bytes": 3399,
+            "sha256": "26d1830fcd11b256e815bc2e94a73df92544e32fe4e4f2dcd0b7ee41f4d6d2f8",
+            "license_evidence": null,
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "e34af754be4361488c9b5c0d0473d8ab06ae847335ecc38712fcb1470ee28d94",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 24,
+      "zh_hant": "PAL 磁帶畫面",
+      "use_hant": "帶噪聲、邊框與熒光點的模擬信號外觀。"
+    },
+    {
+      "id": "FYLM.SG.gristleVHS",
+      "slug": "gristleVHS",
+      "base": "gristleVHS",
+      "category": "Signal",
+      "name": "gristleVHS",
+      "zh": "多段磁带失真",
+      "ja": "gristleVHS",
+      "virtual_height": 240,
+      "slots": [],
+      "overrides": {},
+      "passes": 5,
+      "performance": "multi-pass",
+      "use": "较明显的磁带色彩退化与动态信号失真，无独立参数槽。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "vhs/gristleVHS.slangp",
+        "files": [
+          {
+            "path": "vhs/gristleVHS.slangp",
+            "bytes": 562,
+            "sha256": "230ffd8c7f8b80825d408f66113edcb55dd7a23f8cc1f68342dcf6671b6b6105",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "stock.slang",
+            "bytes": 665,
+            "sha256": "fa7d346e3706a351aa77dc8e77bd049b8bfde635baf4376fedcf81f38d9a4008",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "vhs/shaders/gristleVHS/HorizontalSoften.slang",
+            "bytes": 2714,
+            "sha256": "82bf0bc74d4c6366870ca6721672976712be9862e1b3b412694300c4728ade44",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "blurs/shaders/sunset_gaussian/sunset_horz.slang",
+            "bytes": 1384,
+            "sha256": "6f52813d4456161dc12eca2d404c3cb3ea7984551588ca66530b7b3085eb1895",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "vhs/shaders/gristleVHS/VHS.slang",
+            "bytes": 3049,
+            "sha256": "4e3bbb312115086602de826a9effb59c270289106230cdbb2961a9542b0a8b16",
+            "license_evidence": null,
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "67a829a0c44167083aef9b6745e94f910647a7a371c5acaee45b63edf313f3da",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 25,
+      "zh_hant": "多段磁帶失真",
+      "use_hant": "較明顯的磁帶色彩退化與動態信號失真，無獨立參數槽。"
+    },
+    {
+      "id": "FYLM.SG.ntsc-320px-composite",
+      "slug": "ntsc-320px-composite",
+      "base": "ntsc-320px-composite",
+      "category": "Signal",
+      "name": "ntsc 320px composite",
+      "zh": "NTSC 复合信号 320",
+      "ja": "ntsc 320px composite",
+      "virtual_height": 240,
+      "slots": [],
+      "overrides": {},
+      "passes": 2,
+      "performance": "multi-pass",
+      "use": "模拟低分辨率复合信号的色彩串扰；以320宽画面为设计参考。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "ntsc/ntsc-320px-composite.slangp",
+        "files": [
+          {
+            "path": "ntsc/ntsc-320px-composite.slangp",
+            "bytes": 356,
+            "sha256": "8fd8caae7006474b76d1e4c12c0ac70d816bd4d0319f0e133f7558f067850686",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass1-composite-2phase.slang",
+            "bytes": 552,
+            "sha256": "54c6ac549ff4bbfc73bb4ad329ec2eafebc6b7facc78ef3645e9ae2045b19463",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-param.inc",
+            "bytes": 573,
+            "sha256": "2a51928ef0630a06dadb90131ba45191cebf2526176f05db9d00cffc86eda167",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-rgbyuv.inc",
+            "bytes": 339,
+            "sha256": "a62e7aa91aafd8b4bc1e8abd136229ded0e7d92982bc255ea570989df812bfca",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass1-vertex.inc",
+            "bytes": 353,
+            "sha256": "9e02fddbd36d90c43363063f77a06eb042eb028761643f2c0291dbac3b3bd3c8",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass1-encode-demodulate.inc",
+            "bytes": 543,
+            "sha256": "5ca33bce0416e8860f08086dd9254338c763ade078a3ffb7a5045be9330f0b55",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass2-2phase-gamma.slang",
+            "bytes": 731,
+            "sha256": "ebc1d4ba063d69edaa3069e5f249bc1e0b6ae4d6b0187fdf36b000d3b4ab136f",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-decode-filter-2phase.inc",
+            "bytes": 1198,
+            "sha256": "2c7cbe777c7e54d460af597eaad437840882c17420cf9f3a6a65caedad17bbc7",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass2-vertex.inc",
+            "bytes": 293,
+            "sha256": "a1fc926e7db323457ba7edc4b017d9efc93d1410346c254aea81283c7e51f8d4",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass2-decode.inc",
+            "bytes": 430,
+            "sha256": "cdd7aed4686af2818747d1ba45d60d8fc50e92d331e2c96245da5be8cdd2a3cb",
+            "license_evidence": null,
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "6c824ca71a83f73fb77e907509cb3691c0471037770b945ee334fbc5d99a811f",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 26,
+      "zh_hant": "NTSC 復合信號 320",
+      "use_hant": "模擬低分辨率復合信號的色彩串擾；以320寬畫面為設計參考。"
+    },
+    {
+      "id": "FYLM.SG.ntsc-256px-composite",
+      "slug": "ntsc-256px-composite",
+      "base": "ntsc-256px-composite",
+      "category": "Signal",
+      "name": "ntsc 256px composite",
+      "zh": "NTSC 复合信号 256",
+      "ja": "ntsc 256px composite",
+      "virtual_height": 240,
+      "slots": [],
+      "overrides": {},
+      "passes": 2,
+      "performance": "multi-pass",
+      "use": "模拟低分辨率复合信号的色彩串扰；以256宽画面为设计参考。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "ntsc/ntsc-256px-composite.slangp",
+        "files": [
+          {
+            "path": "ntsc/ntsc-256px-composite.slangp",
+            "bytes": 355,
+            "sha256": "c67f11793a6f9b5d91b53f0cfe0608a8451b335099e69c42a8ff2ffa8e7d4404",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass1-composite-3phase.slang",
+            "bytes": 553,
+            "sha256": "3d888897b88ef56512b950ce3295298e6ab6f0c5e63983de46c400fb9bff2c03",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-param.inc",
+            "bytes": 573,
+            "sha256": "2a51928ef0630a06dadb90131ba45191cebf2526176f05db9d00cffc86eda167",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-rgbyuv.inc",
+            "bytes": 339,
+            "sha256": "a62e7aa91aafd8b4bc1e8abd136229ded0e7d92982bc255ea570989df812bfca",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass1-vertex.inc",
+            "bytes": 353,
+            "sha256": "9e02fddbd36d90c43363063f77a06eb042eb028761643f2c0291dbac3b3bd3c8",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass1-encode-demodulate.inc",
+            "bytes": 543,
+            "sha256": "5ca33bce0416e8860f08086dd9254338c763ade078a3ffb7a5045be9330f0b55",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass2-3phase-gamma.slang",
+            "bytes": 731,
+            "sha256": "2d3c5c8b6a84c4c6628286572c8a540484cebbf824116bba8847cfc908ec27c6",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-decode-filter-3phase.inc",
+            "bytes": 951,
+            "sha256": "1bd8cc8fea48aa89229c4492792aea1e012625cdb5528943c2c9d6bbe1fe9723",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass2-vertex.inc",
+            "bytes": 293,
+            "sha256": "a1fc926e7db323457ba7edc4b017d9efc93d1410346c254aea81283c7e51f8d4",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "ntsc/shaders/maister/ntsc-pass2-decode.inc",
+            "bytes": 430,
+            "sha256": "cdd7aed4686af2818747d1ba45d60d8fc50e92d331e2c96245da5be8cdd2a3cb",
+            "license_evidence": null,
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "76d218c30b3ae0e1aa2d2f501413c5924cf8de02709114aaa4c891bc03240049",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 27,
+      "zh_hant": "NTSC 復合信號 256",
+      "use_hant": "模擬低分辨率復合信號的色彩串擾；以256寬畫面為設計參考。"
+    },
+    {
+      "id": "FYLM.SG.ntsc-adaptive",
+      "slug": "ntsc-adaptive",
+      "base": "ntsc-adaptive",
+      "category": "Signal",
+      "name": "ntsc adaptive",
+      "zh": "自适应复合信号",
+      "ja": "ntsc adaptive",
+      "virtual_height": 240,
+      "slots": [
+        "ntsc_sat",
+        "ntsc_bright",
+        "ntsc_gamma",
+        "cust_artifacting",
+        "cust_fringing",
+        "ntsc_rainbow1",
+        "ntsc_sharp",
+        "quality"
+      ],
+      "overrides": {},
+      "passes": 4,
+      "performance": "multi-pass",
+      "use": "可调彩色条纹、边缘串色、饱和度与锐度。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "ntsc/ntsc-adaptive.slangp",
+        "files": [
+          {
+            "path": "ntsc/ntsc-adaptive.slangp",
+            "bytes": 558,
+            "sha256": "7c9b506c7025888b0ca56909afd4334240778d3a3690360a1c2e60232a75a691",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "stock.slang",
+            "bytes": 665,
+            "sha256": "fa7d346e3706a351aa77dc8e77bd049b8bfde635baf4376fedcf81f38d9a4008",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/guest/advanced/ntsc/ntsc-pass1.slang",
+            "bytes": 7304,
+            "sha256": "26121ed5da526a09176a436689436649db05a6f3248bd19106f185debf257ce8",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/guest/advanced/ntsc/ntsc-pass2.slang",
+            "bytes": 7931,
+            "sha256": "69746f2183c43f94770d22b32d3de1bc6f23cce66c5d68f4de52850b46344cd7",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/guest/advanced/ntsc/ntsc-pass3.slang",
+            "bytes": 6300,
+            "sha256": "8258beb0e78f15e5f9dcd501654361c2c4de53e91190d46d0677ab2506b63de7",
+            "license_evidence": null,
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "bfd30ac9123aa530e84cb4f49419b0ad37b974a574b7332c11744e92e3138a91",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 28,
+      "zh_hant": "自適應復合信號",
+      "use_hant": "可調彩色條紋、邊緣串色、飽和度與銳度。"
+    },
+    {
+      "id": "FYLM.SG.scalefx",
+      "slug": "scalefx",
+      "base": "scalefx",
+      "category": "Scaling",
+      "name": "scalefx",
+      "zh": "原尺寸重建：ScaleFX",
+      "ja": "scalefx",
+      "virtual_height": 0,
+      "slots": [
+        "SFX_CLR",
+        "SFX_SAA",
+        "SFX_SCN"
+      ],
+      "overrides": {},
+      "passes": 6,
+      "performance": "multi-pass",
+      "use": "修整像素画的锯齿与拐角，不负责减少颜色或自动像素化；可先试SG11。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "edge-smoothing/scalefx/scalefx.slangp",
+        "files": [
+          {
+            "path": "edge-smoothing/scalefx/scalefx.slangp",
+            "bytes": 638,
+            "sha256": "016739a084bd0f88f364d7a5994ce53bd166e29859e2b98b1af47e900674fe3f",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "stock.slang",
+            "bytes": 665,
+            "sha256": "fa7d346e3706a351aa77dc8e77bd049b8bfde635baf4376fedcf81f38d9a4008",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "edge-smoothing/scalefx/shaders/scalefx-pass0.slang",
+            "bytes": 2608,
+            "sha256": "a88c923b196539d7ac1a690e4e868397213d9659d512edb0d1c6f7675b0b1d73",
+            "license_evidence": "MIT",
+            "authors": [
+              "Copyright (c) 2016 Sp00kyFox - ScaleFX@web.de",
+              "The above copyright notice and this permission notice shall be included in",
+              "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "edge-smoothing/scalefx/shaders/scalefx-pass1.slang",
+            "bytes": 3161,
+            "sha256": "b1ea2dc411e208cdda8eb8598f290f9ebc7ad7a9f1351baac4fd5fca35e9d645",
+            "license_evidence": "MIT",
+            "authors": [
+              "Copyright (c) 2016 Sp00kyFox - ScaleFX@web.de",
+              "The above copyright notice and this permission notice shall be included in",
+              "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "edge-smoothing/scalefx/shaders/scalefx-pass2.slang",
+            "bytes": 5579,
+            "sha256": "3fcdec55b816c63f8cd3cf0d5bed08b52abe987e16e7fe03408a82668138b4f2",
+            "license_evidence": "MIT",
+            "authors": [
+              "Copyright (c) 2016 Sp00kyFox - ScaleFX@web.de",
+              "The above copyright notice and this permission notice shall be included in",
+              "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "edge-smoothing/scalefx/shaders/scalefx-pass3.slang",
+            "bytes": 8249,
+            "sha256": "99b18adb46e09c7b96d4c103c4daec08d5f70a120cf2070fb35af1a21969bd3f",
+            "license_evidence": "MIT",
+            "authors": [
+              "Copyright (c) 2016 Sp00kyFox - ScaleFX@web.de",
+              "The above copyright notice and this permission notice shall be included in",
+              "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "edge-smoothing/scalefx/shaders/scalefx-pass4.slang",
+            "bytes": 3189,
+            "sha256": "964a07239e628f1a7fe7284b941144f96df27980fc084dbde28ff417a79b98c6",
+            "license_evidence": "MIT",
+            "authors": [
+              "Copyright (c) 2016 Sp00kyFox - ScaleFX@web.de",
+              "The above copyright notice and this permission notice shall be included in",
+              "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          }
+        ]
+      },
+      "sha256": "85d929200794d02a50fd38677ae32d7204566e9891856da485249633c406d24f",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 29,
+      "zh_hant": "原尺寸重建：ScaleFX",
+      "use_hant": "修整像素畫的鋸齒與拐角，不負責減少顏色或自動像素化；可先試SG11。"
+    },
+    {
+      "id": "FYLM.SG.xbrz-freescale",
+      "slug": "xbrz-freescale",
+      "base": "xbrz-freescale",
+      "category": "Scaling",
+      "name": "xbrz freescale",
+      "zh": "原尺寸重建：xBRZ",
+      "ja": "xbrz freescale",
+      "virtual_height": 0,
+      "slots": [
+        "blend_none",
+        "blend_normal",
+        "blend_dominant"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "按边缘方向重建像素画轮廓，不是普通图片转像素画的算法；可先试SG12。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "edge-smoothing/xbrz/xbrz-freescale.slangp",
+        "files": [
+          {
+            "path": "edge-smoothing/xbrz/xbrz-freescale.slangp",
+            "bytes": 111,
+            "sha256": "545f35fc2edf17756a3b14d75c7beb9cb91c9a5a143daa825d5fa5625c505341",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "edge-smoothing/xbrz/shaders/xbrz-freescale.slang",
+            "bytes": 13268,
+            "sha256": "5899b4f6a4c66acb228b49ce59925b41215fcebaff78daf5668eade9b9c23844",
+            "license_evidence": "GPL-3-family",
+            "authors": [
+              "   Copyright (C) 2011/2016 Hyllian - sergiogdb@gmail.com",
+              "   The above copyright notice and this permission notice shall be included in",
+              "   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+              "// * Copyright (C) Zenju (zenju AT gmx DOT de) - All Rights Reserved          *"
+            ]
+          }
+        ]
+      },
+      "sha256": "5e7a0822a11040f2eafd1f7ba12d7a2fe38b4ea93e79152ef8e7b5b5414a2c77",
+      "status": "test-candidate; AE and upstream visual comparison pending",
+      "menu": 30,
+      "zh_hant": "原尺寸重建：xBRZ",
+      "use_hant": "按邊緣方向重建像素畫輪廓，不是普通圖片轉像素畫的算法；可先試SG12。"
+    },
+    {
+      "id": "FYLM.SG.Art.SG05",
+      "slug": "sg05",
+      "base": "fylm-dynamic-soft-crt",
+      "menu": 31,
+      "category": "Art",
+      "name": "SG05 Living Soft CRT",
+      "zh": "SG05 微动荧屏",
+      "ja": "SG05 Living Soft CRT",
+      "virtual_height": 720,
+      "slots": [
+        "FYLM_JITTER",
+        "FYLM_CHROMA",
+        "FYLM_BLEED",
+        "FYLM_LUMA_NOISE",
+        "FYLM_CHROMA_NOISE",
+        "FYLM_INTERFERENCE",
+        "FYLM_FLICKER",
+        "FYLM_WOW",
+        "FYLM_HEAD",
+        "FYLM_DROPOUT",
+        "FYLM_LINES",
+        "FYLM_SPEED",
+        "FYLM_SEED",
+        "FYLM_ECHO",
+        "FYLM_ECHO_OFFSET",
+        "FYLM_HUE_DRIFT"
+      ],
+      "overrides": {
+        "MASK_STRENGTH": 0.08,
+        "SCANLINE_STRENGTH": 0.28,
+        "BRIGHT_BOOST": 1.03,
+        "SHARPNESS_H": 0.6,
+        "SHARPNESS_V": 0.8,
+        "GAMMA_INPUT": 2.2,
+        "GAMMA_OUTPUT": 2.2,
+        "DILATION": 0,
+        "SCANLINE_CUTOFF": 1000
+      },
+      "passes": 2,
+      "performance": "multi-pass",
+      "use": "先动态信号、后固定CRT栅格；人物显示器微动",
+      "source": {
+        "repository": "FYLM original",
+        "path": "fylm/dynamic-soft-crt.slangp"
+      },
+      "sha256": "6819e1a9d5883489d898b8c10189a6ff2177b224d37102113b247e9fa43753d6",
+      "status": "dynamic test candidate; AE pending",
+      "zh_hant": "SG05 微動熒屏",
+      "use_hant": "先動態信號、后固定CRT柵格；人物顯示器微動"
+    },
+    {
+      "id": "FYLM.SG.Art.SG06",
+      "slug": "sg06",
+      "base": "fylm-dynamic-signal",
+      "menu": 32,
+      "category": "Signal",
+      "name": "SG06 Chroma Drift",
+      "zh": "SG06 色度漂移",
+      "ja": "SG06 Chroma Drift",
+      "virtual_height": 720,
+      "slots": [
+        "FYLM_JITTER",
+        "FYLM_CHROMA",
+        "FYLM_BLEED",
+        "FYLM_LUMA_NOISE",
+        "FYLM_CHROMA_NOISE",
+        "FYLM_INTERFERENCE",
+        "FYLM_FLICKER",
+        "FYLM_WOW",
+        "FYLM_HEAD",
+        "FYLM_DROPOUT",
+        "FYLM_LINES",
+        "FYLM_SPEED",
+        "FYLM_SEED",
+        "FYLM_ECHO",
+        "FYLM_ECHO_OFFSET",
+        "FYLM_HUE_DRIFT"
+      ],
+      "overrides": {
+        "FYLM_JITTER": 0.3,
+        "FYLM_CHROMA": 1.2,
+        "FYLM_BLEED": 2,
+        "FYLM_CHROMA_NOISE": 0.012,
+        "FYLM_HUE_DRIFT": 0.025,
+        "FYLM_LUMA_NOISE": 0.009
+      },
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "轻水平波动与色彩漂移，不添加CRT曲面",
+      "source": {
+        "repository": "FYLM original",
+        "path": "fylm/dynamic-signal.slangp"
+      },
+      "sha256": "3bcef8771748c0bfc02173d10c24efbbe8a7f0b9d8ef9197cc868d7e3b1ba375",
+      "status": "dynamic test candidate; AE pending",
+      "zh_hant": "SG06 色度漂移",
+      "use_hant": "輕水平波動與色彩漂移，不添加CRT曲面"
+    },
+    {
+      "id": "FYLM.SG.Art.SG07",
+      "slug": "sg07",
+      "base": "fylm-dynamic-signal",
+      "menu": 33,
+      "category": "Signal",
+      "name": "SG07 Analog Interference",
+      "zh": "SG07 模拟干扰",
+      "ja": "SG07 Analog Interference",
+      "virtual_height": 720,
+      "slots": [
+        "FYLM_JITTER",
+        "FYLM_CHROMA",
+        "FYLM_BLEED",
+        "FYLM_LUMA_NOISE",
+        "FYLM_CHROMA_NOISE",
+        "FYLM_INTERFERENCE",
+        "FYLM_FLICKER",
+        "FYLM_WOW",
+        "FYLM_HEAD",
+        "FYLM_DROPOUT",
+        "FYLM_LINES",
+        "FYLM_SPEED",
+        "FYLM_SEED",
+        "FYLM_ECHO",
+        "FYLM_ECHO_OFFSET",
+        "FYLM_HUE_DRIFT"
+      ],
+      "overrides": {
+        "FYLM_JITTER": 0.5,
+        "FYLM_WOW": 0.8,
+        "FYLM_INTERFERENCE": 0.045,
+        "FYLM_FLICKER": 0.035,
+        "FYLM_CHROMA_NOISE": 0.02,
+        "FYLM_HUE_DRIFT": 0.04,
+        "FYLM_ECHO": 0.04,
+        "FYLM_ECHO_OFFSET": 4
+      },
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "移动横带、亮度波动与空间回波",
+      "source": {
+        "repository": "FYLM original",
+        "path": "fylm/dynamic-signal.slangp"
+      },
+      "sha256": "3bcef8771748c0bfc02173d10c24efbbe8a7f0b9d8ef9197cc868d7e3b1ba375",
+      "status": "dynamic test candidate; AE pending",
+      "zh_hant": "SG07 模擬干擾",
+      "use_hant": "移動橫帶、亮度波動與空間回波"
+    },
+    {
+      "id": "FYLM.SG.Art.SG08",
+      "slug": "sg08",
+      "base": "fylm-dynamic-signal",
+      "menu": 34,
+      "category": "Signal",
+      "name": "SG08 Unstable Playback",
+      "zh": "SG08 失锁回放",
+      "ja": "SG08 Unstable Playback",
+      "virtual_height": 480,
+      "slots": [
+        "FYLM_JITTER",
+        "FYLM_CHROMA",
+        "FYLM_BLEED",
+        "FYLM_LUMA_NOISE",
+        "FYLM_CHROMA_NOISE",
+        "FYLM_INTERFERENCE",
+        "FYLM_FLICKER",
+        "FYLM_WOW",
+        "FYLM_HEAD",
+        "FYLM_DROPOUT",
+        "FYLM_LINES",
+        "FYLM_SPEED",
+        "FYLM_SEED",
+        "FYLM_ECHO",
+        "FYLM_ECHO_OFFSET",
+        "FYLM_HUE_DRIFT"
+      ],
+      "overrides": {
+        "FYLM_JITTER": 2,
+        "FYLM_WOW": 2.5,
+        "FYLM_CHROMA": 3,
+        "FYLM_BLEED": 5,
+        "FYLM_LUMA_NOISE": 0.04,
+        "FYLM_CHROMA_NOISE": 0.03,
+        "FYLM_HEAD": 0.25,
+        "FYLM_DROPOUT": 0.02,
+        "FYLM_INTERFERENCE": 0.025,
+        "FYLM_ECHO": 0.06,
+        "FYLM_ECHO_OFFSET": 5
+      },
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "明显失锁和掉磁细线；适合短时故障段落",
+      "source": {
+        "repository": "FYLM original",
+        "path": "fylm/dynamic-signal.slangp"
+      },
+      "sha256": "3bcef8771748c0bfc02173d10c24efbbe8a7f0b9d8ef9197cc868d7e3b1ba375",
+      "status": "dynamic test candidate; AE pending",
+      "zh_hant": "SG08 失鎖回放",
+      "use_hant": "明顯失鎖和掉磁細線；適合短時故障段落"
+    },
+    {
+      "id": "FYLM.SG.Art.SG09",
+      "slug": "sg09",
+      "base": "sharp-bilinear-simple",
+      "category": "Scaling",
+      "name": "SG09 Sharp Pixel Reconstruction",
+      "zh": "SG09 清晰像素重建",
+      "ja": "SG09 Sharp Pixel Reconstruction",
+      "virtual_height": 240,
+      "slots": [],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "低分辨率输入网格后重建，保留较清晰的像素边缘；适合普通素材试用。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "pixel-art-scaling/sharp-bilinear-simple.slangp",
+        "files": [
+          {
+            "path": "pixel-art-scaling/sharp-bilinear-simple.slangp",
+            "bytes": 106,
+            "sha256": "310b6193f770baef6a7485fbc7115b5bdf9e237203aaa1ebe39e154b6895a50d",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "pixel-art-scaling/shaders/sharp-bilinear-simple.slang",
+            "bytes": 1946,
+            "sha256": "936698d1995e01bfe83307c5226b695e8135205d97932ba1f533c130fb86da5e",
+            "license_evidence": "Public-domain-declaration",
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "4df7b8bffa5a26b8cd4f73e68df499479ad1c17c45a6ed4786e8f4ab1c38a0e0",
+      "status": "test candidate; real AE pending",
+      "menu": 35,
+      "pixel_grid_profile": true,
+      "origin": "FYLM input-grid recipe; upstream scaling algorithm unchanged",
+      "zh_hant": "SG09 清晰像素重建",
+      "use_hant": "低分辨率輸入網格后重建，保留較清晰的像素邊緣；適合普通素材試用。"
+    },
+    {
+      "id": "FYLM.SG.Art.SG10",
+      "slug": "sg10",
+      "base": "sharp-bilinear",
+      "category": "Scaling",
+      "name": "SG10 Adjustable Pixel Reconstruction",
+      "zh": "SG10 可调像素重建",
+      "ja": "SG10 Adjustable Pixel Reconstruction",
+      "virtual_height": 240,
+      "slots": [
+        "SHARP_BILINEAR_PRE_SCALE",
+        "AUTO_PRESCALE"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "低分辨率输入网格后重建，可调预放大比例。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "pixel-art-scaling/sharp-bilinear.slangp",
+        "files": [
+          {
+            "path": "pixel-art-scaling/sharp-bilinear.slangp",
+            "bytes": 99,
+            "sha256": "059a79b17fe4635420f032cb8c1c42072bf7e9104052f3a6cce564cca17f9b5d",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "pixel-art-scaling/shaders/sharp-bilinear.slang",
+            "bytes": 1726,
+            "sha256": "89c30132f1530466676a3be76fcdc5af42f808cd56df6571ff65b64e7073ab7e",
+            "license_evidence": "Public-domain-declaration",
+            "authors": []
+          }
+        ]
+      },
+      "sha256": "a3b8db312b8d9c08ae43a800480b4516c4f86fbf10e7b2af89fa02dcf45f6719",
+      "status": "test candidate; real AE pending",
+      "menu": 36,
+      "pixel_grid_profile": true,
+      "origin": "FYLM input-grid recipe; upstream scaling algorithm unchanged",
+      "zh_hant": "SG10 可調像素重建",
+      "use_hant": "低分辨率輸入網格后重建，可調預放大比例。"
+    },
+    {
+      "id": "FYLM.SG.Art.SG11",
+      "slug": "sg11",
+      "base": "scalefx",
+      "category": "Scaling",
+      "name": "SG11 Smooth Pixel Reconstruction",
+      "zh": "SG11 柔边像素重建",
+      "ja": "SG11 Smooth Pixel Reconstruction",
+      "virtual_height": 240,
+      "slots": [
+        "SFX_CLR",
+        "SFX_SAA",
+        "SFX_SCN"
+      ],
+      "overrides": {},
+      "passes": 6,
+      "performance": "multi-pass",
+      "use": "低分辨率输入网格后修整锯齿，适合线条和轮廓。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "edge-smoothing/scalefx/scalefx.slangp",
+        "files": [
+          {
+            "path": "edge-smoothing/scalefx/scalefx.slangp",
+            "bytes": 638,
+            "sha256": "016739a084bd0f88f364d7a5994ce53bd166e29859e2b98b1af47e900674fe3f",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "stock.slang",
+            "bytes": 665,
+            "sha256": "fa7d346e3706a351aa77dc8e77bd049b8bfde635baf4376fedcf81f38d9a4008",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "edge-smoothing/scalefx/shaders/scalefx-pass0.slang",
+            "bytes": 2608,
+            "sha256": "a88c923b196539d7ac1a690e4e868397213d9659d512edb0d1c6f7675b0b1d73",
+            "license_evidence": "MIT",
+            "authors": [
+              "Copyright (c) 2016 Sp00kyFox - ScaleFX@web.de",
+              "The above copyright notice and this permission notice shall be included in",
+              "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "edge-smoothing/scalefx/shaders/scalefx-pass1.slang",
+            "bytes": 3161,
+            "sha256": "b1ea2dc411e208cdda8eb8598f290f9ebc7ad7a9f1351baac4fd5fca35e9d645",
+            "license_evidence": "MIT",
+            "authors": [
+              "Copyright (c) 2016 Sp00kyFox - ScaleFX@web.de",
+              "The above copyright notice and this permission notice shall be included in",
+              "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "edge-smoothing/scalefx/shaders/scalefx-pass2.slang",
+            "bytes": 5579,
+            "sha256": "3fcdec55b816c63f8cd3cf0d5bed08b52abe987e16e7fe03408a82668138b4f2",
+            "license_evidence": "MIT",
+            "authors": [
+              "Copyright (c) 2016 Sp00kyFox - ScaleFX@web.de",
+              "The above copyright notice and this permission notice shall be included in",
+              "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "edge-smoothing/scalefx/shaders/scalefx-pass3.slang",
+            "bytes": 8249,
+            "sha256": "99b18adb46e09c7b96d4c103c4daec08d5f70a120cf2070fb35af1a21969bd3f",
+            "license_evidence": "MIT",
+            "authors": [
+              "Copyright (c) 2016 Sp00kyFox - ScaleFX@web.de",
+              "The above copyright notice and this permission notice shall be included in",
+              "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "edge-smoothing/scalefx/shaders/scalefx-pass4.slang",
+            "bytes": 3189,
+            "sha256": "964a07239e628f1a7fe7284b941144f96df27980fc084dbde28ff417a79b98c6",
+            "license_evidence": "MIT",
+            "authors": [
+              "Copyright (c) 2016 Sp00kyFox - ScaleFX@web.de",
+              "The above copyright notice and this permission notice shall be included in",
+              "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          }
+        ]
+      },
+      "sha256": "85d929200794d02a50fd38677ae32d7204566e9891856da485249633c406d24f",
+      "status": "test candidate; real AE pending",
+      "menu": 37,
+      "pixel_grid_profile": true,
+      "origin": "FYLM input-grid recipe; upstream scaling algorithm unchanged",
+      "zh_hant": "SG11 柔邊像素重建",
+      "use_hant": "低分辨率輸入網格后修整鋸齒，適合線條和輪廓。"
+    },
+    {
+      "id": "FYLM.SG.Art.SG12",
+      "slug": "sg12",
+      "base": "xbrz-freescale",
+      "category": "Scaling",
+      "name": "SG12 Edge Pixel Reconstruction",
+      "zh": "SG12 锐边像素重建",
+      "ja": "SG12 Edge Pixel Reconstruction",
+      "virtual_height": 240,
+      "slots": [
+        "blend_none",
+        "blend_normal",
+        "blend_dominant"
+      ],
+      "overrides": {},
+      "passes": 1,
+      "performance": "single-pass",
+      "use": "低分辨率输入网格后按边缘方向重建；适合平涂与像素图。",
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "edge-smoothing/xbrz/xbrz-freescale.slangp",
+        "files": [
+          {
+            "path": "edge-smoothing/xbrz/xbrz-freescale.slangp",
+            "bytes": 111,
+            "sha256": "545f35fc2edf17756a3b14d75c7beb9cb91c9a5a143daa825d5fa5625c505341",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "edge-smoothing/xbrz/shaders/xbrz-freescale.slang",
+            "bytes": 13268,
+            "sha256": "5899b4f6a4c66acb228b49ce59925b41215fcebaff78daf5668eade9b9c23844",
+            "license_evidence": "GPL-3-family",
+            "authors": [
+              "   Copyright (C) 2011/2016 Hyllian - sergiogdb@gmail.com",
+              "   The above copyright notice and this permission notice shall be included in",
+              "   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+              "// * Copyright (C) Zenju (zenju AT gmx DOT de) - All Rights Reserved          *"
+            ]
+          }
+        ]
+      },
+      "sha256": "5e7a0822a11040f2eafd1f7ba12d7a2fe38b4ea93e79152ef8e7b5b5414a2c77",
+      "status": "test candidate; real AE pending",
+      "menu": 38,
+      "pixel_grid_profile": true,
+      "origin": "FYLM input-grid recipe; upstream scaling algorithm unchanged",
+      "zh_hant": "SG12 銳邊像素重建",
+      "use_hant": "低分辨率輸入網格后按邊緣方向重建；適合平涂與像素圖。"
+    },
+    {
+      "id": "FYLM.SG.crt-royale",
+      "slug": "crt-royale",
+      "base": "crt-royale",
+      "category": "CRT",
+      "name": "CRT Royale",
+      "zh": "复杂彩管（Royale）",
+      "zh_hant": "複雜彩管（Royale）",
+      "ja": "CRT Royale",
+      "menu": 39,
+      "virtual_height": 480,
+      "passes": 12,
+      "performance": "heavy multi-pass",
+      "use": "精细荧光遮罩与多段光晕；开销较高，建议先使用480行输入网格。",
+      "use_hant": "精細螢光遮罩與多段光暈；開銷較高，建議先使用480行輸入網格。",
+      "slots": [
+        "crt_gamma",
+        "lcd_gamma",
+        "levels_contrast",
+        "halation_weight",
+        "diffusion_weight",
+        "bloom_underestimate_levels",
+        "bloom_excess",
+        "beam_min_sigma",
+        "beam_max_sigma",
+        "beam_spot_power",
+        "beam_min_shape",
+        "beam_max_shape",
+        "beam_shape_power",
+        "beam_horiz_filter",
+        "beam_horiz_sigma",
+        "beam_horiz_linear_rgb_weight"
+      ],
+      "overrides": {},
+      "mix": 1,
+      "source": {
+        "repository": "libretro/slang-shaders",
+        "commit": "a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9",
+        "path": "crt/crt-royale.slangp",
+        "dependencies": [
+          {
+            "path": "crt/crt-royale.slangp",
+            "bytes": 10529,
+            "sha256": "724e0196cf83da1a229bc896e970d639b4cbeb9c41f341e1e5764780fecede96",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-first-pass-linearize-crt-gamma-bob-fields.slang",
+            "bytes": 4189,
+            "sha256": "08d609d05ff1e6ca793c0969a1f1c393f2960eb3c734c43235428eb5fa94f2a0",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "include/compat_macros.inc",
+            "bytes": 771,
+            "sha256": "38c1957b4bedc098ce01f2ee56db6aa97e708b037087dfde51d4ebbe342a2de6",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-royale/user-settings.h",
+            "bytes": 22897,
+            "sha256": "fdd85fca181afaf64b112773721a57e040995b92d1364dcc1577b04538d11a04",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/bind-shader-params.h",
+            "bytes": 16488,
+            "sha256": "0c96863109297914837fa80c5639d10ca780c584ee3817edaca19ca7d452de0e",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/derived-settings-and-constants.h",
+            "bytes": 14186,
+            "sha256": "1438399a93acd0adf54831f37fb20199d81b3828802658b7a8ea5ed0aa58ca91",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/user-cgp-constants.h",
+            "bytes": 3083,
+            "sha256": "8976660d604283a5ee07fa39561559c9766e60323c655571a919a0d8d5518b6e",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "include/gamma-management.h",
+            "bytes": 27936,
+            "sha256": "aa851dac11e468ef0b168bb8576f709b386ea35f5a9f10ed16c0789343a0ad0e",
+            "license_evidence": "MIT",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey",
+              "//  The above copyright notice and this permission notice shall be included in",
+              "//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/scanline-functions.h",
+            "bytes": 28552,
+            "sha256": "e9b104537329ddc6c593418e19898ab15c91da06e76c018d1f54d6b4e4757b93",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "include/special-functions.h",
+            "bytes": 18566,
+            "sha256": "0b5dbbaef443327756958b0f59caad87e23f13f499e0fcd5bac97860b069b3ab",
+            "license_evidence": "MIT",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey",
+              "//  The above copyright notice and this permission notice shall be included in",
+              "//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-scanlines-vertical-interlacing.slang",
+            "bytes": 11294,
+            "sha256": "a93600fa01fe13c9a76868dad47e6901389721efa66db8aa3cf71448184f1fe2",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-bloom-approx.slang",
+            "bytes": 50,
+            "sha256": "9e531b3c3046fe41c6576f5c2ab836442bcc258d0d4ed3f0669631592fc154e4",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-bloom-approx.h",
+            "bytes": 19074,
+            "sha256": "50d5af04fa770560fac17a3f00bbfcab417ad87cc7fa702cdea0b2da78261c80",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "include/blur-functions.h",
+            "bytes": 108594,
+            "sha256": "0edea684af38d783068f61eccc7c8ff8695c80133605bab3f8e73a2337e307d6",
+            "license_evidence": "MIT",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey",
+              "//  The above copyright notice and this permission notice shall be included in",
+              "//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "include/quad-pixel-communication.h",
+            "bytes": 12436,
+            "sha256": "e07f8c0b8583bf78babe1d23333b83ebae40c3f5a664e35fdd041ae6fccb5410",
+            "license_evidence": "MIT",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey*",
+              "//  The above copyright notice and this permission notice shall be included in",
+              "//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+              "//  copyright, but the algorithmic helper functions require so little code that"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/bloom-functions.h",
+            "bytes": 15775,
+            "sha256": "8bc5450359a056ff8dbd9b2504f467687aefb8018af7cc44cc2f222c61c3d0c3",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "blurs/shaders/royale/blur9fast-vertical.slang",
+            "bytes": 2781,
+            "sha256": "4da274ed27c9a3a1055b9b76162c5b3f18f71acfdf9cc2e8f7ffc8282298fd51",
+            "license_evidence": "MIT",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey",
+              "//  The above copyright notice and this permission notice shall be included in",
+              "//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "blurs/shaders/royale/vertex-shader-blur-fast-vertical.h",
+            "bytes": 2674,
+            "sha256": "b076f4a4b3b8fadb5bc80d0b4b9b045de839a6bd75a755b866af7e06a483ca94",
+            "license_evidence": "MIT",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey",
+              "//  The above copyright notice and this permission notice shall be included in",
+              "//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "blurs/shaders/royale/blur9fast-horizontal.slang",
+            "bytes": 2774,
+            "sha256": "402bf7ff14c5c3825a52dde087ec550f067ab53752f884f77dfdbbcaa495172b",
+            "license_evidence": "MIT",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey",
+              "//  The above copyright notice and this permission notice shall be included in",
+              "//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "blurs/shaders/royale/vertex-shader-blur-fast-horizontal.h",
+            "bytes": 2874,
+            "sha256": "be12271987eabf9d9ae02b0d2365f50012368b224476da7d50bb71cbcf07e1e2",
+            "license_evidence": "MIT",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey",
+              "//  The above copyright notice and this permission notice shall be included in",
+              "//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-mask-resize-vertical.slang",
+            "bytes": 7106,
+            "sha256": "c20a113e76cb32765c42d5f0c018a39955ca0142f893c6ee8bec2721f2c25c27",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/phosphor-mask-resizing.h",
+            "bytes": 33936,
+            "sha256": "1820dede5dc179511f3a6d8ad1bb709a85aac2b21ac635eaaaef72ec75532ac0",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-mask-resize-horizontal.slang",
+            "bytes": 5519,
+            "sha256": "966b8d1de40773a9f68e33dc9e7420e62511c7dbb30fed1f80b3426a9e74896e",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-scanlines-horizontal-apply-mask.slang",
+            "bytes": 69,
+            "sha256": "09fc3f28678ba4b270d3cf736f427bac14245136f81e6cdbcdf7ab933d0eb4aa",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-scanlines-horizontal-apply-mask.h",
+            "bytes": 14706,
+            "sha256": "87439a49f06ba4bcbdfd2fa38b55c0e444ebe3958f6f8653edf5b1dc80ada0d2",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-brightpass.slang",
+            "bytes": 7298,
+            "sha256": "6748bf8ca0779b652992cb13d5c0f0ce7927a80e55f64d9fd97ba311b708ed9c",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-bloom-vertical.slang",
+            "bytes": 4304,
+            "sha256": "0605645255aabeb03d3a2e9c7fe6e028dff5e12ea0568f2b8ed04ac4e95fa4cd",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-bloom-horizontal-reconstitute.slang",
+            "bytes": 7006,
+            "sha256": "89a64e73f93bb3d6d6156114784b3b9e2a5b8289ca58fdaca06ee177bdebe5bb",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-geometry-aa-last-pass.slang",
+            "bytes": 60,
+            "sha256": "062aa057e96ce109281b1936bf1deb2b8ad6b3daa13eae7d5f889f08ea83b27d",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/crt-royale-geometry-aa-last-pass.h",
+            "bytes": 10826,
+            "sha256": "a4e73af234fb5bd8470b50efdd3704f2cf0f6f57ee3b9e6400edbe3247216dce",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/tex2Dantialias.h",
+            "bytes": 80378,
+            "sha256": "c2d69eb9989c59e3635849838414ad781a66f5f483a5dba781ad2649fa8014db",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/src/geometry-functions.h",
+            "bytes": 38266,
+            "sha256": "0a4e93cc2f6bf524d7b83b777817fde65c83d7c5a7e390eda640e966bb5ad53d",
+            "license_evidence": "GPL-family",
+            "authors": [
+              "//  Copyright (C) 2014 TroggleMonkey <trogglemonkey@gmx.com>"
+            ]
+          },
+          {
+            "path": "crt/shaders/crt-royale/TileableLinearApertureGrille15Wide8And5d5SpacingResizeTo64.png",
+            "bytes": 3769,
+            "sha256": "3ba708dba5989741c58d9b7a1d1e38499bb6dabeb6787da523c9ca6e06159215",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-royale/TileableLinearApertureGrille15Wide8And5d5Spacing.png",
+            "bytes": 179710,
+            "sha256": "4b46103e20567b99e9525ce521438573f49609452d142438088fa6309902aef2",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-royale/TileableLinearSlotMaskTall15Wide9And4d5Horizontal9d14VerticalSpacingResizeTo64.png",
+            "bytes": 5850,
+            "sha256": "b3ab2c1d9205e167c44fc86aeb5a031a4fe7199de728d52f94e11635a467ab6d",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-royale/TileableLinearSlotMaskTall15Wide9And4d5Horizontal9d14VerticalSpacing.png",
+            "bytes": 184906,
+            "sha256": "4d4385d8476faaaebc6c4f6540b73c28bf3b643a6efb93866e58050f3d0f6567",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-royale/TileableLinearShadowMaskEDPResizeTo64.png",
+            "bytes": 4098,
+            "sha256": "d68808ef5c819555c6001ea2d0627c18e64a7d0a7a6ebb3af4a09261a4c23713",
+            "license_evidence": null,
+            "authors": []
+          },
+          {
+            "path": "crt/shaders/crt-royale/TileableLinearShadowMaskEDP.png",
+            "bytes": 182337,
+            "sha256": "637e567fe5180ba53af5a185ceef24b4a44b86d74d802fb33df6a2d02d3bcf49",
+            "license_evidence": null,
+            "authors": []
+          }
+        ],
+        "license": "GPL-2.0-or-later; preserved Royale source notices and directory LICENSE.TXT"
+      },
+      "sha256": "2215ec7a3e4aa94d28b3f9a68952fcd3473c68821219f0d5adb401b5af2cdff1",
+      "status": "GPU test candidate; actual AE and visual reference pending"
+    }
+  ]
+}

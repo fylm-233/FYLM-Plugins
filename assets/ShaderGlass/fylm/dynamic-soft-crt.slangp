@@ -1,0 +1,9 @@
+# FYLM signal processing first, fixed CRT display raster second.
+shaders = 2
+shader0 = dynamic-signal.slang
+shader1 = ../crt/shaders/crt-easymode.slang
+filter_linear0 = true
+filter_linear1 = true
+scale_type0 = source
+scale_type1 = viewport
+float_framebuffer0 = true

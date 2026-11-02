@@ -1,0 +1,7 @@
+{
+  "source": "FYLM original procedural four-scene diagnostic",
+  "presets": 8,
+  "renderer": "D3D11",
+  "subjective_acceptance": "pending",
+  "private_artwork_used": false
+}

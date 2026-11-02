@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "FYLM PC-9801 Digital RGB8",
+  "encoding": "srgb",
+  "pc98_color_spec": 1,
+  "palette_channel_bits": 1,
+  "color_origin": "FYLM mathematical/reference colour table, not an official game palette",
+  "content_sha256": "3824962ed15535db039b3738fc0f3e0deb795eef00d1e0d55a28d051fa459e26",
+  "colors": [
+    "#000000",
+    "#0000FF",
+    "#00FF00",
+    "#00FFFF",
+    "#FF0000",
+    "#FF00FF",
+    "#FFFF00",
+    "#FFFFFF"
+  ]
+}

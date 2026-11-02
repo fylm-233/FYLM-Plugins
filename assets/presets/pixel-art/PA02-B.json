@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "name": "Soft Desktop 98 / 紫调暗房",
+  "encoding": "srgb",
+  "preset_id": "PA02",
+  "palette_id": "FYLM.PA02.B.v1",
+  "content_sha256": "3531529f4cbaa83d46d18118c420d5ff6e5f32a56f1fae1dbdced0d22028ab38",
+  "color_origin": "original-authored-ramps; not official or directly extracted game palettes",
+  "colors": [
+    "#242744",
+    "#443F62",
+    "#6B5F83",
+    "#9B8FB8",
+    "#C5B9D0",
+    "#EDE5E0",
+    "#8B665F",
+    "#C49485",
+    "#F1CEB4",
+    "#294951",
+    "#558388",
+    "#A5C6C2",
+    "#5D744F",
+    "#ADB78B",
+    "#887AA2",
+    "#D8CDDD"
+  ]
+}

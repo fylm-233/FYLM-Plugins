@@ -1,0 +1,35 @@
+Dithering Studio
+
+Copyright 2025 Oslo418
+
+This product includes software developed by Oslo418 (https://github.com/Oslonline) and contributors.
+
+Attribution is appreciated in derivative works and distributions. If space permits, please include:
+
+  “Built upon Steinberg Image – Dithering Studio by Oslo418 (Apache-2.0)”
+
+This NOTICE file is provided for informational purposes only and does not modify the license. See the LICENSE file for terms.
+
+Native C++ port and AE adapter added in 2026.
+Built upon Steinberg Image – Dithering Studio by Oslo418 (Apache-2.0)
+
+The integrated retro GPU module includes code adapted from
+punikonta/godot-shader-crt-vhs, commit 6ba87f95c152ec023fc07c4f77e87bdd70783afa.
+Copyright (c) Marcel Jovic punikonta@protonmail.com. MIT License.
+See modules/retro_gpu/third_party/LICENSE.crt-vhs.txt in source, or LICENSE.crt-vhs.txt in the binary package.
+The added 2D curvature function is original to this adaptation; it is not in the upstream project.
+
+FYLM 0.4: the cover-print halftone C++ implementation was ported from the
+user-supplied HALFTONE_AE_PLUGIN_SPEC.md and reimuplayer halftone.rs.
+Local provenance snapshots and hashes are kept in references/reimu-halftone.
+No claim is made that this local source is part of the Apache-2.0 or MIT upstream projects above.
+
+FYLM 0.5 includes ShaderGlass/ShaderGC GPL-3.0 derived code, upstream commit 12599475101dc4e64eef11469f33efd653586ba2. See LICENSE.GPL-3.0.txt and docs/FYLM-0.5-REPORT.md. Selected libretro slang-shaders retain GPL and author notices in their source headers.
+
+FYLM 0.6 renames the dithering effect to FYLM Pixel Art. The effect match name FYLM_DitheringStudio and parameter ids 1-14 are unchanged, so this is a display-name change only; the upstream attribution above still applies to the ported dithering algorithms.
+
+FYLM 0.11: 23 additional libretro/slang-shaders presets from commit a4f3aeec04fcb2624ec6df5dd17e38f9b575eab9 are included as test candidates. Dependency source headers and attribution evidence are under assets/ShaderGlass/Library/Sources and catalog-v1.json. Four FYLM portrait recipes change parameter defaults, not algorithm authorship. Per-shader public-release review remains pending. Original procedural thumbnail artwork is by FYLM; no user test artwork is distributed.
+
+FYLM0.12: authored spatial YIQ tape extension and dynamic-signal.slang use NTSC signal concepts referenced against ntsc-rs commit8cfc51014092a6dc1da5eb0217bb9ae6516b124e; no Rust runtime or full NTSC decoder was ported. Existing Godot MIT lineage and frozen legacy shader retain prior attribution. New FYLM dynamic Slang sources are GPL-3.0-or-later. Source paths and distinctions: docs/vhs/RESEARCH-2026-11-02.md.
+
+FYLM0.13 adds the crt-royale test candidate from the same pinned slang-shaders commit. Copyright(C)2014 TroggleMonkey; shader headers specify GPL-2.0-or-later. The original directory LICENSE.TXT, shader/include source and six mask textures are preserved under Assets/ShaderGlass/Library/Sources/crt/shaders/crt-royale. This does not assert that every other candidate has the same license. VHS and VHS mpalko resource candidates are tested locally but not newly embedded pending their own attribution review. The resource test BMP and GLSL fixture are original FYLM diagnostic data, not user artwork.

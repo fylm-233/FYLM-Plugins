@@ -1,0 +1,16 @@
+/build*/
+/dist/
+*.aep
+*.aepx
+/source-release/
+/third_party/ShaderGlass-master/
+/third_party/slang-source/
+/*.zip
+/third_party/*.zip
+*.aex
+*.pdb
+*.obj
+*.log
+.vs/
+.env
+.env.*

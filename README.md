@@ -43,8 +43,6 @@ The source is a Windows development candidate. New 0.13 features and this UI rev
 - [ShaderGlass / ShaderGC](https://github.com/mausimus/ShaderGlass)
 - [libretro/slang-shaders](https://github.com/libretro/slang-shaders)
 - [ntsc-rs](https://github.com/valadaptive/ntsc-rs)
-- reimuplayer halftone — [provenance / 来源 / 出典](references/reimu-halftone)
-
 ntsc-rs is a reference for signal concepts; its Rust runtime is not included.
 
 This repository contains components under different licences. See [NOTICE](NOTICE), [Apache-2.0](LICENSE), [GPL-3.0](LICENSE.GPL-3.0.txt) and the retained source headers. The top-level licence does not cover every component. Public-release attribution checks are tracked in the [publication review](docs/PUBLICATION-REVIEW.md).
